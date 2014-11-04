@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anuncios App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_novo_anuncio">NovoAnuncioActivity</string>
+    
+    <!-- Login -->
+    <string name="input_login_email">E-mail</string>
+    <string name="input_login_senha">Senha</string>
+    <string name="botao_login_entrar">Entrar</string>
+    <string name="link_login_cadastrar">Cadastre-se</string>
+	<string name="link_login_esqueceu_senha">Esqueceu a senha?</string>
+	
+</resources>

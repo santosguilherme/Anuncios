@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+/*Diminuir a fonte dos componentes do primefaces 3.5*/
+.ui-widget,.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button,.ui-accordion .ui-accordion-header a,.ui-datepicker .ui-datepicker-title select
+	{
+	font-size: 11px !important;
+	text-shadow: none;
+}
+
+/*Diminuir os EspaÃ§os em branco do data table primefaces 3.5*/
+.ui-datatable thead th,.ui-datatable tbody td,.ui-datatable tfoot td {
+	white-space: normal;
+}
+
+.semBorda tr,.semBorda td {
+	border: none !important;
+}
+
+.ui-datatable table {
+	margin-left: 0px;
+}
