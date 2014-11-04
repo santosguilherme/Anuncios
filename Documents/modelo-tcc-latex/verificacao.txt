@@ -1,0 +1,12 @@
++ fonte = arial ou times ? times 
++ tirar frente/verso
++ incluir dedicatoria (antes agradecimentos)
++ retirar recuo do resumo e abstract
++ trocar fonte dos titulos para 12
++ alterar sumario 1 espaço simples titulo
++ remover espacamento no titulo dos capitulos (apenas um espaco)
++ ordenacao dos capitulos (negrito, simples, italico) no sumario
++ Adicionar 1.4 Estrutura do trabalho
++ tirar secao 4
++ trocar resultados para resultados e discussoes
++ tirar espaco depois das secoes e subsecoes

@@ -1,0 +1,133 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9 }
+
+\bibitem[Ara{\'u}jo, Garcia e Martines 2011]{araujoGestao}
+\abntrefinfo{Ara{\'u}jo, Garcia e Martines}{ARA{\'U}JO; GARCIA; MARTINES}{2011}
+{ARA{\'U}JO, L. C. G.~d.; GARCIA, A.~A.; MARTINES, S. \emph{Gest{\~a}o de
+  processos}: Melhores resultados e excel{\^e}ncia organizacional. S{\~a}o
+  Paulo: Atlas, 2011.}
+
+\bibitem[Baldam et al. 2008]{baldamBPM}
+\abntrefinfo{Baldam et al.}{BALDAM et al.}{2008}
+{BALDAM, R. d.~L. et al. \emph{Gerenciamento de processos de neg{\'o}cios}:
+  {BPM} - business process management. 2. ed. S{\~a}o Paulo: {\'E}rica, 2008.}
+
+\bibitem[Bezerra 2007]{bezerraUML}
+\abntrefinfo{Bezerra}{BEZERRA}{2007}
+{BEZERRA, E. \emph{Princ{\'\i}pios de An{\'a}lise e Projeto de Sistemas com
+  UML}. 2. ed. Rio de Janeiro: Elsevier, 2007.}
+
+\bibitem[Eriksson e Penker 2000]{erikssonPenkerUML}
+\abntrefinfo{Eriksson e Penker}{ERIKSSON; PENKER}{2000}
+{ERIKSSON, H.~E.; PENKER, M. \emph{Business Modeling with UML}. Nova Iorque:
+  John Wiley e Sons, 2000.}
+
+\bibitem[F{\'e} 2013]{mouraFeMobilePayment}
+\abntrefinfo{F{\'e}}{F{\'E}}{2013}
+{F{\'E}, A.~L. M. Os desafios do mobile payment.
+\emph{TI Inside}, S{\~a}o Paulo, v.~9, n.~93, p. 18--21, Agosto 2013.}
+
+\bibitem[Gil 2010]{gilPesquisa}
+\abntrefinfo{Gil}{GIL}{2010}
+{GIL, A.~C. \emph{Como elaborar projetos de pesquisa}. 5. ed. S{\~a}o Paulo:
+  Atlas, 2010.}
+
+\bibitem[IBOPE 2013]{ibopeNovosProtagonistas}
+\abntrefinfo{IBOPE}{IBOPE}{2013a}
+{IBOPE. \emph{Novos Protagonistas}. 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.ibope.com.br/pt-br/conhecimento/artigospapers/Paginas/Novos-protagonistas-.aspx}.
+  Acesso em: 02 abr. 2014.}
+
+\bibitem[IBOPE 2013]{ibopeTablets}
+\abntrefinfo{IBOPE}{IBOPE}{2013b}
+{IBOPE. \emph{Venda de tablets está aquecida no e-commerce brasileiro}. 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.ibope.com.br/pt-br/noticias/Paginas/Venda-de-tablets-esta-aquecida-no-e-commerce-brasileiro.aspx}.
+  Acesso em: 19 jun. 2014.}
+
+\bibitem[IBOPE 2014]{ibopeMobileEcommerce}
+\abntrefinfo{IBOPE}{IBOPE}{2014}
+{IBOPE. \emph{Cenário Mobile: e-commerce}. 2014.
+Dispon{\'\i}vel em:
+  \url{http://www.ibope.com.br/pt-br/conhecimento/Infograficos/Paginas/Cenario-Mobile-e-commerce.aspx}.
+  Acesso em: 02 abr. 2014.}
+
+\bibitem[Junior e Scucuglia 2011]{juniorMapeamentoGestaoProcessos}
+\abntrefinfo{Junior e Scucuglia}{JUNIOR; SCUCUGLIA}{2011}
+{JUNIOR, O.~P.; SCUCUGLIA, R. Mapeamento e gest{\~a}o por processos: Bpm:
+  business process management.
+M. Books do Brasil, S{\~a}o Paulo, 2011.}
+
+\bibitem[Lecheta 2010]{lechetaAndroid}
+\abntrefinfo{Lecheta}{LECHETA}{2010}
+{LECHETA, R.~R. \emph{Google Android}: Aprenda a criar aplica{\c{c}}oes: Para
+  dispositivos moveis com o android sdk. 2. ed. S{\~a}o Paulo: Novatec Editora,
+  2010.}
+
+\bibitem[Lecheta 2013]{lechetaWindows}
+\abntrefinfo{Lecheta}{LECHETA}{2013}
+{LECHETA, R.~R. \emph{Desenvolvendo para Windows 8}: Aprenda a desenvolver
+  aplicativos para windows phone 8 e windows 8. S{\~a}o Paulo: Novatec, 2013.
+ISBN 9788575223628. Dispon{\'\i}vel em:
+  \url{http://books.google.com.br/books?id=59IynwEACAAJ}.}
+
+\bibitem[Martins e The{\'o}philo 2009]{martinsTheophiloMetodologia}
+\abntrefinfo{Martins e The{\'o}philo}{MARTINS; THE{\'O}PHILO}{2009}
+{MARTINS, G. d.~A.; THE{\'O}PHILO, C.~R. \emph{Metodologia da
+  investiga{\c{c}}{\~a}o cient{\'\i}fica para ci{\^e}ncias sociais aplicadas}.
+  2. ed. [S.l.]: Atlas, 2009.}
+
+\bibitem[Milani 2012]{milaniIOS}
+\abntrefinfo{Milani}{MILANI}{2012}
+{MILANI, A. \emph{Programando para iPhone e iPad}: Aprenda a construir
+  aplicativos para o ios. S{\~a}o Paulo: Novatec, 2012.}
+
+\bibitem[Paiva 2013]{paivaTeletime}
+\abntrefinfo{Paiva}{PAIVA}{2013}
+{PAIVA, F. Desenvolvedores de app viram clientes.
+\emph{TELETIME}, S{\~a}o Paulo, v.~16, n.~168, p. 10--14, Agosto 2013.}
+
+\bibitem[Pilone e Pilone 2011]{pilonesIOS}
+\abntrefinfo{Pilone e Pilone}{PILONE; PILONE}{2011}
+{PILONE, D.; PILONE, T. \emph{Use a Cabe{\c{c}}a!}: desenvolvendo para iphone.
+  Rio de Janeiro: Alta Books, 2011.}
+
+\bibitem[Rozenfeld 2006]{rozenfeldProcesso}
+\abntrefinfo{Rozenfeld}{ROZENFELD}{2006}
+{ROZENFELD, H. \emph{Gest{\~a}o de desenvolvimento de produtos}: uma
+  refer{\^e}ncia para a melhoria do processo. S{\~a}o Paulo: Saraiva, 2006.}
+
+\bibitem[Schuch 2013]{schuchTeletime}
+\abntrefinfo{Schuch}{SCHUCH}{2013}
+{SCHUCH, A.~L. Nuvem, mobilidade e a big data: a grande convergência.
+\emph{TELETIME}, S{\~a}o Paulo, v.~16, n.~165, p.~64, Maio 2013.}
+
+\bibitem[SEBRAE 2014]{sebrae2014}
+\abntrefinfo{SEBRAE}{SEBRAE}{2014}
+{SEBRAE. \emph{Aplicativos para celulares movem mercado bilionário}. 2014.
+Dispon{\'\i}vel em:
+  \url{http://www.sebrae2014.com.br/Sebrae2014/Alertas/Aplicativos-para-celulares-movem-mercado-bilionário}.
+  Acesso em: 31 mar. 2014.}
+
+\bibitem[Sordi 2005]{sordiGestaoModerna}
+\abntrefinfo{Sordi}{SORDI}{2005}
+{SORDI, J.~O. D. \emph{Gest{\~a}o por processos}: uma abordagem da moderna
+  administra{\c{c}}{\~a}o. S{\~a}o Paulo: Saraiva, 2005.}
+
+\bibitem[Tanenbaum 2003]{tanenbaum2003redes}
+\abntrefinfo{Tanenbaum}{TANENBAUM}{2003}
+{TANENBAUM, A.~S. \emph{Redes de computadoras}. 4. ed. Rio de Janeiro: Campus,
+  Elsevier, 2003.}
+
+\bibitem[Valle e Barbar{\'a} 2009]{valleBarbaraBPMN}
+\abntrefinfo{Valle e Barbar{\'a}}{VALLE; BARBAR{\'A}}{2009}
+{VALLE, R.; BARBAR{\'A}, S. \emph{An{\'a}lise e modelagem de processos de
+  neg{\'o}cio}: foco na nota{\c{c}}{\~a}o bpmn (business process modeling
+  notation). [S.l.]: Atlas, 2009.}
+
+\end{thebibliography}

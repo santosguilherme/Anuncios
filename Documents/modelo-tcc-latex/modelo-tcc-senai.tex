@@ -1,0 +1,646 @@
+%% abtex2-modelo-trabalho-academico.tex, v-1.9 laurocesar
+%% Copyright 2012-2013 by abnTeX2 group at http://abntex2.googlecode.com/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://abntex2.googlecode.com/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+%\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage{times}			% Usa a fonte Times
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}			% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{listings}			% para inserir código fonte
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{titlesec}
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% altera o espacamento depois do número de cada secao, subsecao, etc
+\titleformat{\section}
+  {\normalfont\normalsize}{}{0pt}{\thesection\space}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{}{0pt}{\thesubsection\space}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize}{}{0pt}{\thesubsubsection\space}
+\titleformat{\paragraph}
+  {\normalfont\normalsize\itshape}{}{0pt}{\theparagraph\space}
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% **************************************************
+% Informações que devem ser alteradas
+% **************************************************
+\titulo{\uppercase{ANÁLISE E DESENVOLVIMENTO DE UMA FERRAMENTA PARA AUTOMAÇÃO \\ DE CAPTAÇÃO DE ANÚNCIOS}}
+\autor{\uppercase{Guilherme Santos}}
+\orientador{Artur Todeschini Crestani}
+\orientadortcc{Prof. \imprimirorientador, Dr. (SENAI/SC)}
+\coordenador{Prof. Bobiquins Estevão de Mello, Me. (SENAI/SC)}
+\coordenadortcc{Profa. Jaqueline Voltolini de Almeida, Me. (SENAI/SC)}
+\examinador{Prof. Fulado de tal, Me. (SENAI/SC)}
+\preambulo{Trabalho de Conclusão de Curso apresentado à Banca Examinadora do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia do SENAI Florianópolis como requisito parcial para obtenção do Grau de Tecnólogo em Análise e Desenvolvimento de Sistemas.}
+\proforientador{Professor Orientador: \imprimirorientador.}
+\datadefesa{\uppercase{20 de dezembro de 2014}}
+\local{Florianópolis/SC}
+\data{2014}
+% **************************************************
+
+\instituicao{%
+  SERVIÇO NACIONAL DE APRENDIZAGEM INDUSTRIAL 
+  \par
+  FACULDADE DE TECNOLOGIA SENAI/SC FLORIANÓPOLIS
+  \par
+  CURSO SUPERIOR DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS}
+\tipotrabalho{Trabalho de Conclusão de Curso}
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,      	% false: boxed links; true: colored links
+		linkcolor=black,	% color of internal links
+		citecolor=black,        % color of links to bibliography
+		filecolor=magenta,      % color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+\imprimircapa
+\imprimirfolhaderosto*
+
+\begin{folhadeaprovacao}
+
+  \begin{center}
+    {\ABNTEXchapterfont\bfseries\normalsize\imprimirautor}
+
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+        \imprimirpreambulo
+    \vspace*{\fill}
+        
+   APROVADA PELA {\bfseries{COMISSÃO EXAMINADORA}}
+   \par
+   EM FLORIANÓPOLIS, \bfseries{\imprimirdatadefesa}
+   \end{center}
+
+   \assinatura{\imprimircoordenador \\ Coordenador do Curso} 
+   \assinatura{\imprimircoordenadortcc \\ Coordenador de TCC} 
+   \assinatura{\imprimirorientadortcc \\ Orientador} 
+   \assinatura{\imprimirexaminador \\ Examinador}
+   \begin{center}
+    \vspace*{1cm}
+  \end{center}
+\end{folhadeaprovacao}
+
+% Arquivos que devem ser alterados
+\include{alterar/dedicatoria}
+\include{alterar/agradecimentos}
+\include{alterar/epigrafe}
+\include{alterar/resumo}
+\include{alterar/abstract}
+
+% lista de figuras
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+
+% inserir lista de tabelas
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
+
+% Arquivos que devem ser alterados
+\include{alterar/siglas}
+\include{alterar/simbolos}
+
+% inserir o sumario
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% PARTE - preparação da pesquisa
+% ----------------------------------------------------------
+%\part{Preparação da pesquisa}
+
+
+% Informações que devem ser alteradas
+% **************************************************
+% ---
+% Introdução
+% ---
+\chapter{INTRODUÇÃO}
+
+O processo que envolve um anúncio de mídias impressas, como jornais, revistas e outros, passam por diversas etapas desde o cliente até a impressão final. Este processo não é muito conhecido e difundido, tanto na área de marketing como na área da Tecnologia da Informação e Comunicação (TIC). Este trabalho tem como um de seus objetivos a compreensão, a análise e documentação com o uso de \textit{Business Process Modeling} (BPM) das etapas envolvidas no processo de anúncios. Com essa documentação referente ao processo, melhorias poderão ser fornecidas para aperfeiçoá-lo e também analisar onde um software pode ser envolvido para realização de parte deste processo e por consequência a proposta do desenvolvimento de uma ferramenta que efetue uma das partes diagnosticadas no processo como que podem ser melhoradas. 
+
+Este trabalho tem como objetivo fornecer um maior esclarecimento sobre o processo de anúncios e apresentar quais serão os resultados práticos e teóricos alcançados no final da análise e desenvolvimento do projeto.
+
+Por meio da análise e desenvolvimento de um aplicativo móvel, que proporcione a captação do anúncio, seguindo a tendência do explosivo mercado de aplicativos móveis e o objetivo que estes aplicativos possuem, de fornecer cada vez mais mobilidade e autonomia para seus usuários. 
+
+\begin{citacao}
+O mercado de aplicativos para celulares cresce a cada ano, em todo o mundo são mais de 1,8 milhão de apps disponíveis para os mais diversos tipos de usuários, além disso, o faturamento esperado para este ano deve alcançar a ordem de US\$ 29,5 bilhões. No Brasil, o mercado de celulares também está aquecido, segundo dados da Agência Nacional de Telecomunicações (Anatel) são mais de 265 milhões de linhas de celulares ativas no país. \cite{sebrae2014}.
+\end{citacao}
+
+Com o uso do BPM, este trabalho pretende contribuir com a modelagem do processo de negócio existente e propor um novo clico de vida com os fluxos completamente redesenhados, tornando-o mais eficiente. A partir do processo existente modelado, é possível analisar e identificar os pontos desnecessários, duplicados e/ou que congestionam o processo. O processo e/ou os fluxos das atividades que são realizadas dentro dele, são redesenhados com a finalidade de propiciar uma maior agilidade, economia e o aumento do lucro em sua execução.
+
+Apresenta-se uma visão sobre o mercado de dispositivos móveis e o desenvolvimento de aplicativos para os mesmos, com um estudo a respeito das principais tecnologias utilizadas para desenvolvimento nas principais plataformas móveis.
+
+
+\section{JUSTIFICATIVA}
+
+Segundo \citeonline[p. 178]{tanenbaum2003redes} os telefones celulares não são mais simples dispositivos eletrônicos que realizam chamadas e enviam mensagens de texto. Com o avanço da tecnologia, novos dispositivos como tablets e smartphones, que permitem o usuário acessar a internet e a uma enorme variedade de aplicativos, surgiram e entraram no mercado de forma impactante. No Brasil o crescimento deste mercado mostra-se acompanhar os demais países do mundo. 
+
+Em 2013, \citeonline[p. 64]{schuchTeletime} afirma que a Agência Nacional de Telecomunicações (ANATEL) divulgou uma estimativa sobre o número de dispositivos móveis no Brasil, esse número seria de 264 milhões (1,3 dispositivos por habitante), incluindo smartphones e celulares convencionais, desse total, 68,2 milhões aparelhos possuem acesso à internet.
+
+Estudos também foram realizados pelo Instituto Brasileiro de Opinião Pública e Estatística (IBOPE) para comprovar o aumento do comércio e utilização de smartphones. Segundo dados que o instituto recolheu das 42 maiores lojas online, em 2013 o e-commerce brasileiro vendeu 1.841.880 smartphones, que superou em 48\% a venda de celulares convencionais. O IBOPE identificou uma evolução expressiva do número de usuários de smartphones, que de novembro de 2012 a junho de 2013 cresceu 25\%, chegando a quase 20 milhões de pessoas no país \cite{ibopeMobileEcommerce}.
+
+O \citeonline{ibopeNovosProtagonistas, ibopeTablets} também realizou um levantamento sobre a venda de tablets nas principais lojas de comércio eletrônico do Brasil. Os números apontam um total de 57 mil aparelhos vendidos no primeiro trimestre de 2012. No segundo trimestre de 2013, o crescimento das vendas chegou a 168\%, de abril a junho de 2013 foram vendidos 1,92 milhões de unidades, este aumento significativo pode ser explicado com a entrada no mercado de mais fabricantes destes dispositivos, causando a baixa do preço médio dos tablets.
+
+Segundo \citeonline[p. 12]{paivaTeletime}, a Flurry, empresa que analisa o mercado móvel, “acompanha o uso de 25 milhões de smartphones no Brasil, este é o número de aparelhos que contam com pelo menos um aplicativo instalado com o código da empresa”.
+Os dispositivos móveis não mudaram apenas o mercado, mudaram também o cotidiano de seus usuários, que passaram a estar mais tempo acompanhando de seus aparelhos e possuir uma interação muito maior. 
+
+\begin{citacao}
+Quase 30\% dos mineiros e capixabas checam seus aparelhos assim que acordam e 61\% em situações de espera como em consultórios médicos, trânsito, transporte público ou cinema. Outras atividades em que eles utilizam seu aparelho foram levantadas, como no banheiro (21\%), durante as refeições (15\%) ou enquanto socializam (13\%). E, como última atividade do dia, 37\% estão com seus smartphones antes de dormir, afirma o instituto \cite{ibopeNovosProtagonistas}.
+\end{citacao}
+
+Os usuários destes dispositivos passaram a realizar transações em seus aparelhos que antes eram realizadas pelo computador. Como transações bancárias, pagamentos de contas e também compras on-line. 
+
+Em uma pesquisa realizada com mineiros e capixabas, o \citeonline{ibopeNovosProtagonistas} informou que em maio de 2013 aproximadamente um terço deles gastou mais de 200 reais em compras realizadas pelo aparelho. Aplicativos e jogos para dispositivo móvel foram comprados por 39\% deles, eletrônicos por 34\% e compras coletivas por 33\%. 
+
+Além disso, \citeonline[p. 20]{mouraFeMobilePayment} afirma que “no ano passado o PayPal registrou US\$ 14 bilhões em transações feitas por usuários por meio de dispositivos móveis (celulares, smartphones e tablets), contra US\$ 4 bilhões em 2011. Para este ano, a projeção da empresa é de atingir US\$ 20 bilhões”.
+
+Em virtude do crescimento do mercado de dispositivos móveis, o mercado de aplicativos para estes dispositivos entrou em uma ascensão explosiva, \citeonline[p. 11]{paivaTeletime} afirma que "ao longo dos últimos cinco anos, a popularização de smartphones gerou uma explosão de downloads de apps, o que atraiu mais desenvolvedores, inflando as lojas de aplicativos, agora com catálogos na casa de um milhão de títulos". \citeonline[p. 10]{paivaTeletime} ainda afirma que "existem cerca de 500 mil desenvolvedores de apps móveis no mundo, desde amadores que têm atividade como um hobby até empresas com faturamento anual na cada das centenas de milhões de dólares".
+
+
+\section{OBJETIVOS}
+
+Os objetivos da pesquisa são elencados a seguir.
+
+\subsection{Objetivo geral}
+
+Propor melhorias no processo de negócio de uma empresa de mídia impressa, a partir de análise e modelagem do modelo de negócio atual.
+
+\subsection{Objetivos específicos}
+
+\begin{enumerate}[label=\itshape\alph*\upshape)]
+	\item Analisar e modelar o processo de negócio que foi analisado na empresa, utilizando a notação de modelagem de processos de negócios (BPMN).
+	\item	Aperfeiçoar o processo de negócio que foi modelado com a BPMN, ou seja, a realização de um ciclo do BPM.
+	\item	Propor e desenvolver um aplicativo móvel utilizando a plataforma Android, que contempla a parte do processo em que é realizada a captação de anúncios pelos agentes e também possibilitará aos clientes do veículo publicar seus próprios anúncios sem necessitarem do intermédio de um funcionário da empresa. 
+	
+\end{enumerate}
+
+\section{METODOLOGIA}
+
+Dizer qual metodologia de trabalho será usada.
+
+\section{ESTRUTURA DO TRABALHO}
+
+Explicar como o trabalho está estruturado.
+
+% ---
+% Capitulo de revisão de literatura
+% ---
+\chapter{REVISÃO DA LITERATURA}\label{cap-revisao}
+Neste capítulo apresenta um estudo bibliográfico das tecnologias utilizadas para o desenvolvimento do trabalho.
+
+\section{PLATAFORMAS DE DESENVOLVIMENTO MÓVEL}
+Ao estudar o assunto em relação ao desenvolvimento de aplicativos móveis, três tecnologias de desenvolvimento podem ser apontadas como as principais e consequentemente as mais encontradas nos aparelhos. Estas tecnologias são as plataformas Android da Google, iOS da Apple e Windows Phone da Microsoft.
+
+\subsection{Android}
+O Android é uma plataforma de desenvolvimento para aplicativos móveis, criada pelo grupo Open Handset Alliance (OHA) e liderada pelo Google. O OHA foi criado com o objetivo de definir uma plataforma única e de código aberto para celulares, além de moderna e flexível para o desenvolvimento de aplicações corporativas. Como citado anteriormente, a licença da plataforma é livre (Apache Software Foundation) permitindo assim que os fabricantes realizem alterações e customizem seus produtos, além de permitir que desenvolvedores criem aplicativos para seus próprios aparelhos. 
+
+Segundo \citeonline[p. 23]{lechetaAndroid}, “o Android tem muitos diferenciais interessantes e uma arquitetura realmente flexível focada na integração de aplicações. Não existe diferença entre uma aplicação nativa e uma desenvolvida por você”. O sistema operacional utilizado na plataforma é o Linux, o mesmo é responsável pelo gerenciamento de memória, processos, threads, redes, drivers e a segurança arquivos e pastas. 
+
+A linguagem de desenvolvimento utilizada no Android é o Java, porém os aplicativos não rodam na Java Virtual Machine (JVM) e sim em outra máquina virtual chamada Dalvik, que foi aprimorada para executar em dispositivos móveis. 
+
+A última versão disponibilizada da plataforma no desenvolvimento deste trabalho é o Android 4.4. O Google possui uma loja de aplicativos para a sua plataforma, a Google Play, anteriormente conhecida como Android Market.
+
+\subsection{iOS}
+O iOS é a plataforma de desenvolvimento móvel da Apple, inicialmente ele foi desenvolvido apenas para o iPhone, onde derivou seu nome, o iPhone OS, mas logo ele começou a ser utilizado em outros dispositivos como iPods, iPads e Apple TV, então passou a ser chamado apenas de iOS \cite{milaniIOS}. 
+
+O sistema foi desenvolvido para ser executado apenas com os hardwares também desenvolvidos pela empresa. Este é um dos diferenciais dos produtos da Apple, onde o software consegue utilizar todos os recursos fornecidos pelo hardware, atuando assim em conjunto. Outro diferencial da plataforma, é que seu sistema operacional possui uma interface elegante, simples e intuitiva \cite{milaniIOS}. 
+
+A versão atual do iOS no desenvolvimento deste trabalho é a 7.1. Os aplicativos desenvolvidos para o iOS, geralmente são escritos com a linguagem de programação Objective-C, que também é utilizada no desenvolvimento para o sistema operacional Mac OS, mas também outras linguagens como C ou C++ podem ser utilizadas para o desenvolvimento dos aplicativos móveis. Um dos requisitos do desenvolvimento para iOS é um computador com o Mac OS. 
+
+A Apple possui sua própria loja de aplicativos móveis para a sua plataforma, chamada App Store, onde desenvolvedores e empresas publicam seus aplicativos para a comunidade, cobrando algum preço ou até mesmo de graça \cite{pilonesIOS}.
+
+\subsection{Windows Phone}
+O Windows Phone é a plataforma de desenvolvimento de aplicativos móveis da Microsoft. A ideia da empresa é aumentar sua participação no mercado de dispositivos móveis, e entrou pesado na briga quando estabeleceu parcerias com outras grandes empresas do ramo da telefonia como Nokia, HTC e Samsung. 
+
+A última versão lançada desta plataforma no desenvolvimento deste trabalho é a Windows Phone 8 que “se destaca como uma das principais plataformas de desenvolvimento mobile do mercado e possui uma interface única e muito focada na experiência do usuário”, afirma \citeonline[p. 16]{lechetaWindows}. 
+
+A linguagem de programação utilizada para desenvolvimento nesta plataforma é a C\#, também criada pela Microsoft, além deste requisito para o desenvolvimento de aplicativos, outra restrição é que o mesmo seja realizado em um ambiente com o sistema operacional Windows 8. 
+
+Assim como as outras plataformas citadas nos parágrafos anteriores, a Microsoft também possui a sua loja de aplicativos para a plataforma, a Windows Phone Store.
+
+\section{PROCESSOS DE NEGÓCIO}
+Na construção de sua obra literária, \citeonline{baldamBPM} utiliza uma série de conceitos correlatos de diferentes fontes de referência para facilitar a compreensão de processos de negócios no seu contexto. Abaixo está transcrito o conceito de processos de negócios definido por Rozenfeld.
+
+\begin{citacao}
+É um fenômeno que ocorre dentro das empresas. Compreende um conjunto de atividades realizadas na empresa, associadas às informações que manipula, utilizando os recursos e a organização da empresa. Forma uma unidade coesa e deve ser focalizado em um tipo de negócio, que normalmente está direcionado a um determinado mercado/cliente, com fornecedores bem definidos \cite[p. 538]{rozenfeldProcesso}.
+\end{citacao}
+
+\subsection{Business Process Management (BPM)}
+O \textit{Business Process Management} (BPM), segundo \citeonline{juniorMapeamentoGestaoProcessos}, pode ser definido como um conjunto de métodos, ferramentas e tecnologias que possuem objetivos em comum, como por exemplo: a) documentação do processo; b) efetuar treinamentos; c) estabelecimento de padrões de trabalho d) respostas às mudanças; e) identificação de possíveis melhorias f) desenho de um novo processo; g) comunicação h) definição de novos requisitos i) métricas de desempenho j) automatização k) permitir a simulação e análise de impacto; 
+
+Os processos de negócios possuem níveis de hierarquia no BPM, para que tornar possível a representação de sua complexidade. São eles: a) processo, a abstração de mais alto nível; b) subprocesso, abstrações que possuem consolidação em níveis superiores e que também são decompostas em níveis inferiores; c) atividade, é o nível mais baixo da abstração, são processos que não possuem mais decomposição. Todos os elementos citados anteriormente são também são chamados de processos \cite{sordiGestaoModerna}.
+
+Modelar um processo significa utilizar fluxos, diagramas ou mapas para representar graficamente a sequência de atividades que consolidam um processo. Esta representação deve chegar a um ponto de ser compreensível a todas as partes interessadas, desde o topo até a base da pirâmide organizacional. Para tornar esta tarefa possível, simples diagramas podem ser necessários para representar os pontos mais complexos do processo, seu nível de detalhamento e as ferramentas utilizadas dependem dos leitores do modelo \cite{juniorMapeamentoGestaoProcessos}.
+
+
+\subsection{Business Process Modeling Notation (BPMN)}
+No ano de 2004, o \textit{Business Process Management Initiative} (BPMI) publicou um padrão de notação chamado BPMN que havia sido desenvolvido por integrantes de algumas empresas como IBM, Pega, Lombardi, Ônix e iGrafx \cite{valleBarbaraBPMN}. No ano seguinte, o BPMI foi incorporado pela \textit{Object Management Group} (OMG), que se trata de uma associação aberta e sem fins lucrativos que é responsável pelo desenvolvimento de padrões utilizados na indústria de software \cite{araujoGestao}.
+
+\citeonline{valleBarbaraBPMN} definem a criação do BPMN como o produto final de um acordo entre empresas de ferramentas de modelagem que se reuniram com o intuito de criar uma linguagem para modelagem de processos de negócios, uma linguagem que fosse única e padronizada, facilitando assim o entendimento do usuário final. Os mesmos ainda ressaltam que o BPMN possui utilidade apenas como apoio a modelagem de conceitos aplicados a processos de negócios, ou seja, modelagens como a modelagem de estrutura organizacional e recursos, modelos de dados e informações e regras de negócios estão fora do escopo do BPMN. 
+
+Para \citeonline{juniorMapeamentoGestaoProcessos}, o BPMN trata-se da maior, mais ampla e moderna notação para modelagem de processos que adotou um padrão de linguagem que resolve lacunas deixadas por métodos de modelagem anteriores, mesmo assim, ressaltam que a BPMN possui um ponto fraco significativo, por possuir uma linguagem particular, os elementos de notação não é difundida no grande público. 
+
+É importante ressaltar, que mesmo \citeonline{valleBarbaraBPMN} definindo que o BPMN é utilizado para apoiar apenas a modelagem de processos de negócios, a notação de modelagem é aplicada em todos os ciclos de gestão por processos de negócios (BPM), tornando-se o principal responsável por integrar as pessoas interessadas com o processo \cite{sordiGestaoModerna}.
+
+A finalidade de especificar processos de negócios é possuir uma documentação com qualidade, íntegro, não redundante e disponível para ser utilizado em toda a gestão de processo, permitindo seus usuários interagir com as operações do processo como monitorar e acompanhar seu desempenho por exemplo. Quando a BPMI desenvolveu a BPMN, seu principal objetivo era acabar com as perdas e dificuldades na interação entre o projeto lógico e físico. O BPMN foi criado para se tornar um padrão de comunicação entre todos os envolvidos (analistas de processos, técnicos, usuários, clientes e outros) com o processo de negócio, ele deve ser capaz de representar todos os complexos elementos dos processos de negócios atuais \cite{sordiGestaoModerna}.
+
+Na especificação do processo de negócio pelo BPMN, são utilizados gráficos para representar de maneira simples, a lógica e os comportamentos mais complexos dos processos. Para que isso seja possível, é empregado um único diagrama, denominado de Diagrama de Processos de Negócios (DPN), ou \textit{Business Process Diagram} (BPD) \cite{araujoGestao}.
+
+A figura \ref{fig-bpmn-exemplo} está exemplificado um simples diagrama DPN.
+\\ \\ \\ \\ 
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Diagrama de Processos de Negócios (DPN)}
+		}\label{fig-bpmn-exemplo}
+		\includegraphics [scale=0.8]{imagens/bpmn_exemplo.jpg}
+		\fonte{IPROCESS}\label{fig-bpmn-exemplo}
+	\end{center}
+\end{figure}
+ 
+
+
+
+\subsection{Processo}
+Segundo \citeonline{baldamBPM} o processo aparece em várias situações para designar uma sequência de atividades: exemplo processos jurídicos, químicos. Neste trabalho o foco é o processo de negócios ou \textit{bussines process}, expressão que recupera o sentido do termo negócio, que não se restringe ao seu uso corrente no trato mercantil. 
+
+A modelagem de processos de negócio envolve a descoberta, projeto e entrega de processo de negócios. Adicionalmente, o BPM inclui o controle executivo, administrativo e supervisório desses processos.
+
+O propósito comum de todo o processo é transformar os recursos (entradas) em materiais de valor (saídas), como por exemplo, transformar materiais em aço ou informações em dados relevantes. Para tornar estas transformações possíveis, os processos necessitam de suprimentos, que são chamados de recursos de transformação, estes suprimentos podem ser colaboradores, equipamentos, softwares, repositório de informações, entre outros \cite{baldamBPM}.
+
+A figura \ref{fig-processo} ilustra como todos estes elementos (entradas, recursos de transformação e saídas) estão diretamente incluídos no processo.
+\\ \\ \\ \\ \\ \\ \\
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Visão sistêmica dos processos}
+		}\label{fig-processo}
+		\includegraphics [scale=0.9]{imagens/processo.jpg}
+		\fonte{BALDAM (2008)}\label{fig-processo}
+	\end{center}
+\end{figure}
+
+Os autores \citeonline{erikssonPenkerUML} desenvolveram um conjunto de extensões baseadas em elementos de modelos da UML para representar elementos de um negócio. Estes elementos representam as entradas, recursos de transformação e saídas do processo, descritos anteriormente e ilustrados na figura acima. Com o diagrama do BPM é possível identificar o que é necessário para o processo acontecer (pré-condições), os envolvidos diretamente no processo (atores e outros elementos externos) e o seu resultado (pós-condição).
+
+Na figura \ref{fig-macroprocesso} estão representados os elementos que são utilizados para representar um processo de negócio na UML.
+\\ \\ \\
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Elementos para representar o processo de negócio}
+		}\label{fig-macroprocesso}
+		\includegraphics [scale=0.6]{imagens/macroprocesso.png}
+		\fonte{ERIKSSON; PENKER; (2000)}\label{fig-macroprocesso}
+	\end{center}
+\end{figure}
+
+
+\section{CASOS DE USO}
+Caso de uso é uma descrição completa de um dos usos do sistema por um ator, ou seja, caso de uso é definido por \citeonline[p. 60]{bezerraUML} como a "especificação de uma sequência completa de interações entre um sistema e um ou mais agentes externos (atores)".
+
+\begin{citacao}
+Na terminologia da UML, qualquer elemento externo ao sistema que interage com o mesmo é, por definição, denominado ator. O termo "externo" nessa definição indica que atores não fazem parte do sistema. O termo "interage" significa que um ator troca informações com o sistema (envia informações para o sistema processar, ou recebe informações processadas provenientes do sistema). Atores representam a forma pela qual um sistema percebe seu ambiente. \cite[p. 60]{bezerraUML}.
+\end{citacao}
+
+Esta especificação tem como objetivo expor como ocorre o uso de uma funcionalidade do sistema, sem aprofundar-se na estrutura e detalhes internos do mesmo. A existência dessa característica revela que o modelo de caso de uso é um modelo com uma visão externa do sistema. O modelo de caso de uso permite visualizar quais são as funcionalidades e resultados providos pelo sistema.
+
+Um caso de uso pode ser representado graficamente através de um diagrama, o diagrama de casos de uso. Este é um diagrama da \textit{Unified Modeling Language} (UML) que representa uma visão de alto nível do sistema. Atores, casos de uso e os seus relacionamentos são os elementos que compõem este diagrama e seu principal objetivo é mostrar como estes elementos inter-relacionam com as funcionalidades do sistema \cite{bezerraUML}. 
+ 
+
+
+
+---------
+% % Exemplo Modelo
+Veja um exemplo de nota de rodapé\footnote{Isso é uma nota de rodapé.}.
+
+Podemos também inserir tabelas da seguinte forma. A Tabela \ref{tab-exemplo} mostra um exemplo de tabela.
+
+\begin{table}[h!]
+\center\scriptsize
+\caption{\textbf{Tabela exemplo}}
+\begin{tabular}{|l|c|c|} \hline \label{tab-exemplo}
+\textbf{ Característica}	& \textbf{Valor} 	& \textbf{ Comportamento} \\ \hline
+Característica A 		& 8			& Bom \\ \hline
+Característica B		& 10			&Ótimo \\ \hline
+\textbf{Situação}		& \multicolumn{2}{c|}{\textit{Aprovado!}} \\ \hline
+\end{tabular}
+\fonte{do autor}
+\end{table}
+
+
+% ---
+% Procedimentos metodológicos
+% ---
+\chapter{PROCEDIMENTOS METODOLÓGICOS}
+\textbf{falar sobre pesquisa básica}
+
+
+Segundo \citeonline[p. 1]{gilPesquisa}, a pesquisa é definida como o "procedimento racional e sistemático que tem como objetivo proporcionar respostas aos problemas que são propostos". Ele ainda afirma que a pesquisa é necessária quando não existe informação suficiente para o problema, ou "então quando a informação disponível se encontra em tal estado de desordem que não possa ser adequadamente relacionada ao problema” \cite[p. 1]{gilPesquisa}. No presente trabalho fez-se o uso da pesquisa exploratória, da estratégia de pesquisa bibliográfica e da avaliação qualitativa.
+
+Por se tratar de um tema interdisciplinar e os conteúdos sobre ele serem escassos, a pesquisa assumiu um caráter exploratório, com o objetivo de prover maior intimidade ao problema e ao tema, com o intuito de torná-los mais transparentes e compreensíveis. As técnicas de coletas de dados e informações geralmente utilizadas são as de “levantamento bibliográfico e de entrevistas com pessoas que tiveram experiência prática com o assunto” \cite[p. 27]{gilPesquisa} e foram as utilizadas pelo autor.
+
+A pesquisa bibliográfica é definida por ser uma “estratégia de pesquisa necessária para a condução de qualquer pesquisa científica. Uma pesquisa bibliográfica procura explicar e discutir um assunto, tema ou problema” \cite[p. 54]{martinsTheophiloMetodologia}. Esta estratégia utiliza de conteúdos publicados em livros, periódicos, revistas, jornais, enciclopédias, dicionários, teses, dissertações, anais de eventos científicos e sites.
+
+Para o conhecimento teórico referente às principais tecnologias das plataformas de desenvolvimento móvel, o crescimento do mercado de dispositivos móveis e consequentemente o crescimento do mercado de desenvolvimento para estes dispositivos e também sobre o BPM foram adquiridos por meio de levantamento bibliográfico em livros, revistas e monografias, encontrados na biblioteca do SENAI Florianópolis e também em sites de instituições educacionais e de pesquisa e estatística.
+
+As técnicas adotadas para a coleta de dados, informações e evidências utilizadas pelo autor foram as de levantamento bibliográfico e de entrevistas. Estas técnicas são importantes para a pesquisa, pois permitem o autor analisar as informações necessárias referentes ao tema e realizar o desenvolvimento e as conclusões de sua pesquisa.
+
+Os dados obtidos no levantamento bibliográfico foram dados secundários, que segundo \citeonline[p. 85]{martinsTheophiloMetodologia} são os dados “já coletados que se encontram organizados em livros, banco de dados, anuários estatísticos, relatórios, etc”. Através de revistas e sites, foram levantados os dados referentes ao crescimento dos mercados de dispositivos móveis e aplicativos móveis.
+
+As entrevistas são definidas pelos autores \citeonline[p. 88]{martinsTheophiloMetodologia} como “uma técnica de pesquisa para coleta de informações, dados e evidências cujo objetivo básico é entender e compreender o significado que entrevistados atribuem a questões e situações em contextos que não foram estruturados anteriormente”. Foram realizadas entrevistas semi estruturadas, que é conduzida sem um roteiro, mas podendo o entrevistador acrescentar novas questões, com o sócio e diretor técnico de uma empresa privada, que trabalha há 20 anos com mídias impressas. As entrevistas tinham como objetivo a compreensão e o esclarecimento sobre o processo de um anúncio, desde sua captação até a publicação.
+
+A pesquisa qualitativa tem como preocupação central descrições, compreensões e interpretações dos fatos ao invés de medições, afirmam \citeonline[p. 141]{martinsTheophiloMetodologia}. Justifica-se a abordagem qualitativa quando existe pouca informação a respeito do assunto a ser pesquisado, sendo necessários explorar o conhecimento que as pessoas possuem com base em suas experiências. Os dados qualitativos levantados com a pesquisa foram as citações diretas de pessoas sobre suas experiências, referente ao processo de um anúncio. Estes dados foram captados através da técnica de entrevista.
+
+
+% ---
+% Desenvolvimento
+% ---
+\chapter{MODELO PROPOSTO}
+
+\section{PROCESSO ATUAL}
+O processo que envolve a captação de anúncio de veículos de mídias impressas foi levantado e projetado pelo autor através de entrevistas (informação verbal)\footnote{Informação fornecida pelo diretor de desenvolvimento de uma empresa de desenvolvimento de software em Florianópolis, em Abril de 2014.} e por sua experiência trabalhando em uma empresa de desenvolvimento de software para veículos de comunicação.
+
+Visando documentar o processo levantado pelo autor, foi modelado um diagrama de macro processo para representar o modelo atual do processo.
+
+A figura a seguir apresenta a ilustração do processo desenvolvida pelo autor.
+
+\section{OTIMIZAÇÃO DO PROCESSO}
+
+
+\section{MODELO DE CASO DE USO}
+Com a modelagem do processo de negócio, foi possível identificar os atores envolvidos com o processo. A partir deste resultado, a modelagem de caso de uso foi desenvolvida para definir as interações dos atores com o sistema e outros elementos externos.
+
+A figura a seguir apresenta o diagrama de caso de uso, possibilitando visualizar os requisitos levantados pelo autor no desenvolvimento do trabalho.
+
+A seguir estão detalhados os casos de uso que foram contemplados pelo autor no desenvolvimento do aplicativo móvel.
+
+\begin{table}[h!]
+	\center\scriptsize
+	\caption{\textbf{Caso de uso: Cadastrar Anúncio}}
+	\begin{tabular}{|l|c|c|} \hline \label{tab-csu-cadastrarAnuncio}
+		\textbf{Cadastrar Anúncio (CSU01)} \\ \hline
+		
+		\textbf{Sumário:} O ator usa o sistema para cadastrar um anúncio de classificados no jornal. \\
+		\textbf{Ator Primário:} Cliente. \\
+		\textbf{Precondições:} O ator deve estar autenticado no sistema. \\ \hline
+		
+		\textbf{Fluxo Principal:} O caso de uso se inicia quando o ator acessa o sistema e seleciona a opção "Novo anúncio". \\ \hline
+
+		\textbf{Fluxo de Exceção:} \\ \hline
+		
+		\textbf{Pós-condições:} \\ \hline
+				
+	\end{tabular}
+	\fonte{AUTOR (2014)}
+\end{table}
+
+\begin{table}[h!]
+	\center\scriptsize
+	\caption{\textbf{Caso de uso: Visualizar Anúncios}}
+	\begin{tabular}{|l|c|c|} \hline \label{tab-csu-visualizarAnuncios}
+		\textbf{Visualizar Anúncios (CSU02)} \\ \hline
+		
+		\textbf{Sumário:} O ator visualiza seus últimos anúncios cadastrados no sistema. \\
+		\textbf{Ator Primário:} Cliente. \\
+		\textbf{Precondições:} O ator deve estar autenticado no sistema. \\ \hline
+		
+		\textbf{Fluxo Principal:} O Caso de uso se inicia quando o ator acessa o sistema e entra em sua página inicial ou \\ seleciona a opção "Meus anúncios". \\ \\
+		
+		1.	O ator solicita ao sistema a visualização dos últimos anúncios cadastrados. \\
+		2.	O sistema exibe os últimos anúncios cadastrados pelo autor. \\
+		3.	O ator visualiza seus últimos anúncios cadastrados. \\
+		4.	O caso de uso é encerrado. \\ \hline
+		
+		\textbf{Fluxo de Exceção (2):} Nenhum anúncio cadastrado.\\ 
+		a. O ator ainda não cadastrou nenhum anúncio, o sistema informa o fato e o caso de uso é encerrado.\\ \hline
+		
+		\textbf{Pós-condições:} O ator visualiza seus últimos anúncios cadastrados. \\ \hline
+		
+	\end{tabular}
+	\fonte{AUTOR (2014)}
+\end{table}
+
+\section{APLICATIVO}
+
+
+% ---
+% Resultados
+% ---
+\chapter{RESULTADOS E DISCUSSÕES}
+
+A analise do processo de negócios com bpm possibilitou a realização de levantamento dos requisitos necessários e a identificação dos requisitos que poderiam ser abolidos...
+
+% ---
+% Conclusão
+% ---
+\chapter{CONCLUSÃO}
+
+As conclusão do trabalho são apresentadas aqui.
+
+% **************************************************
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+% \postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% Arquivos que devem ser alterados
+\bibliography{alterar/referencias}
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% Informações que devem ser alteradas
+% **************************************************
+% ---
+% Inicia os apêndices
+% ---
+\begin{apendicesenv}
+
+\chapter{Código fonte}
+Código de minha autoria. O apêndice é opcional ao TCC e deve ser elaborado pelo próprio autor. Destina-se a complementar as ideias, sem prejuízo do tema do trabalho. Segue um exemplo:
+
+\scriptsize
+\begin{lstlisting}
+#include <stdio.h>
+
+int main() {
+  printf("Ola mundo !\n");
+  return 0;
+}
+\end{lstlisting}
+
+\end{apendicesenv}
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+\begin{anexosenv}
+
+\chapter{Pesquisa IBGE}
+O anexo é opcional ao TCC e são informações não elaboradas pelo próprio autor, mas que tem como objetivo complementar as ideias, sem prejuízo do tema do relatório.
+
+\end{anexosenv}
+
+% Etiqueta para auxiliar contagem do numero de paginas do texto e dos elementos pos-textuais
+\label{nropaginas}
+
+% **************************************************
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+\printindex
+
+\end{document}
