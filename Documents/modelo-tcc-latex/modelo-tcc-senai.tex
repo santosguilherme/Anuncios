@@ -115,7 +115,7 @@
 \examinador{Prof. Fulado de tal, Me. (SENAI/SC)}
 \preambulo{Trabalho de Conclusão de Curso apresentado à Banca Examinadora do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia do SENAI Florianópolis como requisito parcial para obtenção do Grau de Tecnólogo em Análise e Desenvolvimento de Sistemas.}
 \proforientador{Professor Orientador: \imprimirorientador.}
-\datadefesa{\uppercase{20 de dezembro de 2014}}
+\datadefesa{\uppercase{11 de dezembro de 2014}}
 \local{Florianópolis/SC}
 \data{2014}
 % **************************************************
@@ -311,14 +311,6 @@ Propor melhorias no processo de negócio de uma empresa de mídia impressa, a pa
 	
 \end{enumerate}
 
-\section{METODOLOGIA}
-
-Dizer qual metodologia de trabalho será usada.
-
-\section{ESTRUTURA DO TRABALHO}
-
-Explicar como o trabalho está estruturado.
-
 % ---
 % Capitulo de revisão de literatura
 % ---
@@ -415,7 +407,7 @@ A figura \ref{fig-processo} ilustra como todos estes elementos (entradas, recurs
 			\textbf{Visão sistêmica dos processos}
 		}\label{fig-processo}
 		\includegraphics [scale=0.9]{imagens/processo.jpg}
-		\fonte{BALDAM (2008)}\label{fig-processo}
+		\fonte{\citeonline{baldamBPM}}\label{fig-processo}
 	\end{center}
 \end{figure}
 
@@ -502,33 +494,78 @@ O processo que envolve a captação de anúncio de veículos de mídias impressa
 
 Visando documentar o processo levantado pelo autor, foi modelado um diagrama de macro processo para representar o modelo atual do processo.
 
-A figura a seguir apresenta a ilustração do processo desenvolvida pelo autor.
+A figura \ref{fig-diag-macroprocesso} apresenta a ilustração do macro processo desenvolvida pelo autor.
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Diagrama de macro processo do processo atual}
+		}\label{fig-diag-macroprocesso}
+		\includegraphics [scale=0.4]{imagens/diagrama_macro_processo.png}
+		\fonte{AUTOR (2014)}\label{fig-diag-macroprocesso}
+	\end{center}
+\end{figure}
 
 \section{OTIMIZAÇÃO DO PROCESSO}
+bla bla bla \\ \\ \\ \\ \\
 
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Diagrama de macro processo do processo otimizado}
+		}\label{fig-diag-macroprocesso-otimizado}
+		\includegraphics [scale=0.5]{imagens/diagrama_macro_processo_otimizado.png}
+		\fonte{AUTOR (2014)}\label{fig-diag-macroprocesso-otimizado}
+	\end{center}
+\end{figure}
 
 \section{MODELO DE CASO DE USO}
 Com a modelagem do processo de negócio, foi possível identificar os atores envolvidos com o processo. A partir deste resultado, a modelagem de caso de uso foi desenvolvida para definir as interações dos atores com o sistema e outros elementos externos.
 
-A figura a seguir apresenta o diagrama de caso de uso, possibilitando visualizar os requisitos levantados pelo autor no desenvolvimento do trabalho.
+A figura \ref{fig-modelo-uc} apresenta o diagrama de caso de uso, possibilitando visualizar os requisitos levantados pelo autor no desenvolvimento do trabalho. \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 
-A seguir estão detalhados os casos de uso que foram contemplados pelo autor no desenvolvimento do aplicativo móvel.
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{
+			\textbf{Modelo de Caso de Uso}
+		}\label{fig-modelo-uc}
+		\includegraphics [scale=0.5]{imagens/modelo_caso_de_uso.png}
+		\fonte{AUTOR (2014)}\label{fig-modelo-uc}
+	\end{center}
+\end{figure}
+
+A seguir estão detalhados apenas os casos de uso que foram contemplados pelo autor no desenvolvimento do aplicativo móvel.
 
 \begin{table}[h!]
 	\center\scriptsize
 	\caption{\textbf{Caso de uso: Cadastrar Anúncio}}
-	\begin{tabular}{|l|c|c|} \hline \label{tab-csu-cadastrarAnuncio}
+	\begin{tabular}{|l|} \hline \label{tab-csu-cadastrarAnuncio}
 		\textbf{Cadastrar Anúncio (CSU01)} \\ \hline
 		
-		\textbf{Sumário:} O ator usa o sistema para cadastrar um anúncio de classificados no jornal. \\
+		\textbf{Sumário:} O ator usa o sistema para cadastrar um anúncio de classificados de jornal impresso. \\
 		\textbf{Ator Primário:} Cliente. \\
 		\textbf{Precondições:} O ator deve estar autenticado no sistema. \\ \hline
 		
-		\textbf{Fluxo Principal:} O caso de uso se inicia quando o ator acessa o sistema e seleciona a opção "Novo anúncio". \\ \hline
+		\textbf{Fluxo Principal:} O caso de uso se inicia quando o ator acessa o sistema e seleciona a opção \\"Novo anúncio". \\ \\
 
-		\textbf{Fluxo de Exceção:} \\ \hline
 		
-		\textbf{Pós-condições:} \\ \hline
+		1.	O sistema solicita ao ator as informações de cadastro do anúncio. \\
+		2.	O ator preenche com as informações necessárias. \\
+		3.  O ator seleciona a opção "Salvar". \\
+		4.  O sistema valida as informações. \\
+		5.  O sistema retorna uma mensagem confirmando o cadastro. \\
+		6.	O caso de uso é encerrado. \\ \hline
+
+		\textbf{Fluxo Alternativo (3):} Cancelar.\\ 
+		a. O ator solicita o cancelamento da execução do passo 3 do fluxo básico.\\
+		b. O sistema encerra o cadastro. \\
+		c. O caso de uso é encerrado. \\ \hline
+
+		\textbf{Fluxo de Exceção (4):} Dados inválidos.\\
+		a. O ator informou dados que não satisfaçam as validações do sistema, então o sistema \\ retorna ao passo 1 informando qual validação não foi satisfeita.\\ \hline
+		
+		\textbf{Pós-condições:} Deve-se manter a integridade dos dados sobre um anúncio e seus relacionamentos. \\ \hline
 				
 	\end{tabular}
 	\fonte{AUTOR (2014)}
@@ -537,21 +574,21 @@ A seguir estão detalhados os casos de uso que foram contemplados pelo autor no 
 \begin{table}[h!]
 	\center\scriptsize
 	\caption{\textbf{Caso de uso: Visualizar Anúncios}}
-	\begin{tabular}{|l|c|c|} \hline \label{tab-csu-visualizarAnuncios}
+	\begin{tabular}{|l|} \hline \label{tab-csu-visualizarAnuncios}
 		\textbf{Visualizar Anúncios (CSU02)} \\ \hline
 		
 		\textbf{Sumário:} O ator visualiza seus últimos anúncios cadastrados no sistema. \\
 		\textbf{Ator Primário:} Cliente. \\
 		\textbf{Precondições:} O ator deve estar autenticado no sistema. \\ \hline
 		
-		\textbf{Fluxo Principal:} O Caso de uso se inicia quando o ator acessa o sistema e entra em sua página inicial ou \\ seleciona a opção "Meus anúncios". \\ \\
+		\textbf{Fluxo Principal:} O Caso de uso se inicia quando o ator acessa o sistema e entra em sua página \\ inicial ou seleciona a opção "Meus anúncios". \\ \\
 		
-		1.	O ator solicita ao sistema a visualização dos últimos anúncios cadastrados. \\
-		2.	O sistema exibe os últimos anúncios cadastrados pelo autor. \\
-		3.	O ator visualiza seus últimos anúncios cadastrados. \\
-		4.	O caso de uso é encerrado. \\ \hline
+
+		1.	O sistema exibe os últimos anúncios cadastrados pelo autor. \\
+		2.	O ator visualiza seus últimos anúncios cadastrados. \\
+		3.	O caso de uso é encerrado. \\ \hline
 		
-		\textbf{Fluxo de Exceção (2):} Nenhum anúncio cadastrado.\\ 
+		\textbf{Fluxo de Exceção (2):} Nenhum anúncio cadastrado.\\
 		a. O ator ainda não cadastrou nenhum anúncio, o sistema informa o fato e o caso de uso é encerrado.\\ \hline
 		
 		\textbf{Pós-condições:} O ator visualiza seus últimos anúncios cadastrados. \\ \hline

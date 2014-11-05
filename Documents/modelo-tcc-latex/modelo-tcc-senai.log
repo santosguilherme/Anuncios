@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.28)  4 NOV 2014 18:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.28)  5 NOV 2014 20:49
 entering extended mode
 **modelo-tcc-senai.tex
-
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.tex"
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,9 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\abntex2.cls"
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\abntex2.cls
 Document Class: abntex2 2013/10/26 v1.9 abnTeX2
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -909,10 +905,8 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\backref.sty"
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 )
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\abntex2cite.sty"
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\abntex2abrev.sty")
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\abntex2cite.sty
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\abntex2abrev.sty)
 \minimumbiblabelwidth=\skip197
 \ABCIauxlen=\skip198
 \c@ABCIaux=\count179
@@ -951,23 +945,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Info: Option `colorlinks' set `true' on input line 149.
 \modelo-tcc-senai@idxfile=\write4
 Writing index file modelo-tcc-senai.idx 
-
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.aux"
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/dedicatoria.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/agradecimentos.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/epigrafe.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/resumo.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/abstract.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/siglas.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/simbolos.aux")
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.aux
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/dedicatoria.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/agradecimentos.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/epigrafe.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/resumo.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/abstract.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/siglas.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/simbolos.aux)
 
 LaTeX Warning: Label `fig-bpmn-exemplo' multiply defined.
 
@@ -976,6 +961,15 @@ LaTeX Warning: Label `fig-processo' multiply defined.
 
 
 LaTeX Warning: Label `fig-macroprocesso' multiply defined.
+
+
+LaTeX Warning: Label `fig-diag-macroprocesso' multiply defined.
+
+
+LaTeX Warning: Label `fig-diag-macroprocesso-otimizado' multiply defined.
+
+
+LaTeX Warning: Label `fig-modelo-uc' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
@@ -1096,256 +1090,373 @@ l.185
 ] [2
 
 ]
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/dedicatoria.tex" [3
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/dedicatoria.tex [3
 
 
 ])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/agradecimentos.tex" [4
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/agradecimentos.tex
+[4
 
 
 
 
-])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/epigrafe.tex" [5
+]) (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/epigrafe.tex
+[5
 
 
 
-])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/resumo.tex" [6
+]) (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/resumo.tex [6
 
 
 
 ])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/abstract.tex" [7
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/abstract.tex [7
 
 
 
 ])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.lof") [8
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.lof) [8
 
 
 ]
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.lot") [9
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.lot) [9
 
 ]
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/siglas.tex" [10
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/siglas.tex [10
 
 
 
 ])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/simbolos.tex" [11
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/simbolos.tex [11
 
 
 
 
 ])
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.toc") [12
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.toc) [12
 
-
-] [13
-
-
-] [14] [15] [16] [17
 
 ]
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+[13
+
+
+] [14] [15] [16
+
+] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
-<imagens/bpmn_exemplo.jpg, id=269, 463.7325pt x 236.38312pt>
+<imagens/bpmn_exemplo.jpg, id=271, 463.7325pt x 236.38312pt>
 File: imagens/bpmn_exemplo.jpg Graphic file (type jpg)
 
 <use imagens/bpmn_exemplo.jpg>
-Package pdftex.def Info: imagens/bpmn_exemplo.jpg used on input line 394.
+Package pdftex.def Info: imagens/bpmn_exemplo.jpg used on input line 386.
 (pdftex.def)             Requested size: 370.9865pt x 189.10675pt.
- [20]
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
-<imagens/processo.jpg, id=280, 393.72093pt x 380.17032pt>
+<imagens/processo.jpg, id=282, 393.72093pt x 380.17032pt>
 File: imagens/processo.jpg Graphic file (type jpg)
 
 <use imagens/processo.jpg>
-Package pdftex.def Info: imagens/processo.jpg used on input line 417.
+Package pdftex.def Info: imagens/processo.jpg used on input line 409.
 (pdftex.def)             Requested size: 354.34557pt x 342.15012pt.
- [21 <D:/Dropbox/SENAI - Análise e Desenvolvimento de Sistemas 2012.1/TCC/TCC/
-Latex/modelo-tcc-latex/imagens/bpmn_exemplo.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
+ [20 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/bpmn_exemplo.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-<imagens/macroprocesso.png, id=288, 429.10312pt x 343.2825pt>
+<imagens/macroprocesso.png, id=294, 429.10312pt x 343.2825pt>
 File: imagens/macroprocesso.png Graphic file (type png)
 
 <use imagens/macroprocesso.png>
-Package pdftex.def Info: imagens/macroprocesso.png used on input line 432.
+Package pdftex.def Info: imagens/macroprocesso.png used on input line 424.
 (pdftex.def)             Requested size: 257.46385pt x 205.97107pt.
- [22 <D:/Dropbox/SENAI - Análise e Desenvolvimento de Sistemas 2012.1/TCC/TCC/
-Latex/modelo-tcc-latex/imagens/processo.jpg>]
+ [21 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/processo.jpg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 454.
+(Font)              <7> on input line 446.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 454.
-
-[23 <D:/Dropbox/SENAI - Análise e Desenvolvimento de Sistemas 2012.1/TCC/TCC/L
-atex/modelo-tcc-latex/imagens/macroprocesso.png>]
+(Font)              <5> on input line 446.
+ [22 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/macroprocesso.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 461.
+(Font)              <9> on input line 453.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 462.
- [24] [25
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 454.
+ [23] [24
 
-] [26]
+] [25]
+<imagens/diagrama_macro_processo.png, id=347, 1081.03876pt x 357.335pt>
+File: imagens/diagrama_macro_processo.png Graphic file (type png)
+
+<use imagens/diagrama_macro_processo.png>
+Package pdftex.def Info: imagens/diagrama_macro_processo.png used on input line
+ 504.
+(pdftex.def)             Requested size: 432.40784pt x 142.93146pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+<imagens/diagrama_macro_processo_otimizado.png, id=348, 809.0225pt x 391.4625pt
+>
+File: imagens/diagrama_macro_processo_otimizado.png Graphic file (type png)
+ <use imagens/diagrama_macro_processo_otimizado.png>
+Package pdftex.def Info: imagens/diagrama_macro_processo_otimizado.png used on 
+input line 517.
+(pdftex.def)             Requested size: 404.51027pt x 195.73076pt.
+ [26
+
+ <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/diagrama_macro_processo
+.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+<imagens/modelo_caso_de_uso.png, id=355, 579.16376pt x 544.0325pt>
+File: imagens/modelo_caso_de_uso.png Graphic file (type png)
+
+<use imagens/modelo_caso_de_uso.png>
+Package pdftex.def Info: imagens/modelo_caso_de_uso.png used on input line 533.
+
+(pdftex.def)             Requested size: 289.58116pt x 272.01558pt.
+ [27 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/diagrama_macro_proc
+esso_otimizado.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27
-
-] [28] [29
+[28 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/modelo_caso_de_uso.p
+ng (PNG copy)>] [29] [30
 
 ]
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.bbl"
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.brf")
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.bbl
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.brf)
 \tf@brf=\write5
- [30
+ [31
 
 ]
 bibitemlist
-[31
+[32
 
 ])
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 611.
- [32] [33
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 648.
+ [33] [34
 
 ]
 No file modelo-tcc-senai.ind.
 
 AED: lastpage setting LastPage
-[34
+[35
 
 ]
 \tf@lof=\write6
 \tf@lot=\write7
 \tf@toc=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
+ (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.aux
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/dedicatoria.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/agradecimentos.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/epigrafe.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/resumo.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/abstract.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/siglas.aux)
+(D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/simbolos.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 683.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
 
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\modelo-tcc-senai.aux"
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/dedicatoria.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/agradecimentos.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/epigrafe.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/resumo.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/abstract.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/siglas.aux")
-("D:\Dropbox\SENAI - Análise e Desenvolvimento de Sistemas 2012.1\TCC\TCC\Late
-x\modelo-tcc-latex\alterar/simbolos.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
-Package rerunfilecheck Info: File `modelo-tcc-senai.brf' has not changed.
-(rerunfilecheck)             Checksum: 6EB4343EDCAF9D9AADF31BE3DE0AA354;2477.
 
+Package rerunfilecheck Warning: File `modelo-tcc-senai.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `modelo-tcc-senai.brf':
+(rerunfilecheck)             Before: 225E365439662EB40F98C3C3FA07FFA9;2521
+(rerunfilecheck)             After:  9B28C65140F1BC6645F0E6C7F7648C99;2521.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 683.
  ) 
 Here is how much of TeX's memory you used:
- 15493 strings out of 493921
- 233163 string characters out of 3144863
- 388410 words of memory out of 3000000
- 18210 multiletter control sequences out of 15000+200000
+ 15514 strings out of 493921
+ 230560 string characters out of 3144863
+ 388923 words of memory out of 3000000
+ 18224 multiletter control sequences out of 15000+200000
  53616 words of font info for 189 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,13n,35p,891b,1103s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on modelo-tcc-senai.pdf (35 pages, 296979 bytes).
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on modelo-tcc-senai.pdf (36 pages, 461170 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 26448 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 26447 words of extra memory for PDF output out of 29859 (max. 10000000)
 
