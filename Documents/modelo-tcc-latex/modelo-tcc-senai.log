@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.28)  5 NOV 2014 20:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.28)  8 NOV 2014 21:26
 entering extended mode
 **modelo-tcc-senai.tex
 (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.tex
@@ -1162,7 +1162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
-<imagens/bpmn_exemplo.jpg, id=271, 463.7325pt x 236.38312pt>
+<imagens/bpmn_exemplo.jpg, id=265, 463.7325pt x 236.38312pt>
 File: imagens/bpmn_exemplo.jpg Graphic file (type jpg)
 
 <use imagens/bpmn_exemplo.jpg>
@@ -1203,7 +1203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
-<imagens/processo.jpg, id=282, 393.72093pt x 380.17032pt>
+<imagens/processo.jpg, id=280, 393.72093pt x 380.17032pt>
 File: imagens/processo.jpg Graphic file (type jpg)
 
 <use imagens/processo.jpg>
@@ -1224,7 +1224,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-<imagens/macroprocesso.png, id=294, 429.10312pt x 343.2825pt>
+<imagens/macroprocesso.png, id=293, 429.10312pt x 343.2825pt>
 File: imagens/macroprocesso.png Graphic file (type png)
 
 <use imagens/macroprocesso.png>
@@ -1243,164 +1243,166 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
  [23] [24
 
 ] [25]
-<imagens/diagrama_macro_processo.png, id=347, 1081.03876pt x 357.335pt>
+<imagens/diagrama_macro_processo.png, id=350, 1081.03876pt x 357.335pt>
 File: imagens/diagrama_macro_processo.png Graphic file (type png)
 
 <use imagens/diagrama_macro_processo.png>
 Package pdftex.def Info: imagens/diagrama_macro_processo.png used on input line
  504.
 (pdftex.def)             Requested size: 432.40784pt x 142.93146pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-<imagens/diagrama_macro_processo_otimizado.png, id=348, 809.0225pt x 391.4625pt
->
-File: imagens/diagrama_macro_processo_otimizado.png Graphic file (type png)
- <use imagens/diagrama_macro_processo_otimizado.png>
-Package pdftex.def Info: imagens/diagrama_macro_processo_otimizado.png used on 
-input line 517.
-(pdftex.def)             Requested size: 404.51027pt x 195.73076pt.
  [26
 
  <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/diagrama_macro_processo
 .png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+<imagens/diagrama_macro_processo_otimizado.png, id=356, 809.0225pt x 391.4625pt
+>
+File: imagens/diagrama_macro_processo_otimizado.png Graphic file (type png)
+ <use imagens/diagrama_macro_processo_otimizado.png>
+Package pdftex.def Info: imagens/diagrama_macro_processo_otimizado.png used on 
+input line 524.
+(pdftex.def)             Requested size: 404.51027pt x 195.73076pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
-<imagens/modelo_caso_de_uso.png, id=355, 579.16376pt x 544.0325pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+[27 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/diagrama_macro_proce
+sso_otimizado.png (PNG copy)>]
+<imagens/modelo_caso_de_uso.png, id=362, 579.16376pt x 544.0325pt>
 File: imagens/modelo_caso_de_uso.png Graphic file (type png)
 
 <use imagens/modelo_caso_de_uso.png>
-Package pdftex.def Info: imagens/modelo_caso_de_uso.png used on input line 533.
+Package pdftex.def Info: imagens/modelo_caso_de_uso.png used on input line 540.
 
 (pdftex.def)             Requested size: 289.58116pt x 272.01558pt.
- [27 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/diagrama_macro_proc
-esso_otimizado.png (PNG copy)>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28 <D:/GitHub/Anuncios/Documents/modelo-tcc-latex/imagens/modelo_caso_de_uso.p
-ng (PNG copy)>] [29] [30
-
-]
+ng (PNG copy)>] [29]
 (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.bbl
 (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\modelo-tcc-senai.brf)
 \tf@brf=\write5
- [31
+ [30
 
 ]
 bibitemlist
-[32
+[31
 
 ])
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 648.
- [33] [34
+ [32] [33
 
 ]
 No file modelo-tcc-senai.ind.
 
 AED: lastpage setting LastPage
-[35
+[34
 
 ]
 \tf@lof=\write6
@@ -1418,45 +1420,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
 (D:\GitHub\Anuncios\Documents\modelo-tcc-latex\alterar/simbolos.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 683.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
+Package rerunfilecheck Info: File `modelo-tcc-senai.brf' has not changed.
+(rerunfilecheck)             Checksum: 61D922823AC2C8D66810725F26F07B5E;2620.
 
-
-Package rerunfilecheck Warning: File `modelo-tcc-senai.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `modelo-tcc-senai.brf':
-(rerunfilecheck)             Before: 225E365439662EB40F98C3C3FA07FFA9;2521
-(rerunfilecheck)             After:  9B28C65140F1BC6645F0E6C7F7648C99;2521.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 683.
  ) 
 Here is how much of TeX's memory you used:
- 15514 strings out of 493921
- 230560 string characters out of 3144863
- 388923 words of memory out of 3000000
- 18224 multiletter control sequences out of 15000+200000
- 53616 words of font info for 189 fonts, out of 3000000 for 9000
+ 15523 strings out of 493921
+ 230741 string characters out of 3144863
+ 389499 words of memory out of 3000000
+ 18233 multiletter control sequences out of 15000+200000
+ 53841 words of font info for 191 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,13n,35p,891b,1103s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on modelo-tcc-senai.pdf (36 pages, 461170 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on modelo-tcc-senai.pdf (35 pages, 461966 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 26447 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 26439 words of extra memory for PDF output out of 29859 (max. 10000000)
 

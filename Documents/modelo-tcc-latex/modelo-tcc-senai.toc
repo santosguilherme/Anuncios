@@ -16,16 +16,15 @@
 \contentsline {subsection}{\numberline {2.2.3}Processo}{20}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}CASOS DE USO}{22}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}PROCEDIMENTOS METODOL\IeC {\'O}GICOS}{24}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}MODELO PROPOSTO}{26}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}RESULTADOS E DISCUSS\IeC {\~O}ES}{26}{chapter.4}
 \contentsline {section}{\numberline {4.1}PROCESSO ATUAL}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}OTIMIZA\IeC {\c C}\IeC {\~A}O DO PROCESSO}{26}{section.4.2}
+\contentsline {section}{\numberline {4.2}OTIMIZA\IeC {\c C}\IeC {\~A}O DO PROCESSO}{27}{section.4.2}
 \contentsline {section}{\numberline {4.3}MODELO DE CASO DE USO}{27}{section.4.3}
-\contentsline {section}{\numberline {4.4}APLICATIVO}{29}{section.4.4}
-\contentsline {chapter}{\chapternumberline {5}RESULTADOS E DISCUSS\IeC {\~O}ES}{30}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}CONCLUS\IeC {\~A}O}{31}{chapter.6}
-\contentsline {chapter}{\bfseries {REFER\^ENCIAS}}{32}{section*.14}
+\contentsline {section}{\numberline {4.4}APLICATIVO}{28}{section.4.4}
+\contentsline {chapter}{\chapternumberline {5}CONCLUS\IeC {\~A}O}{30}{chapter.5}
+\contentsline {chapter}{\bfseries {REFER\^ENCIAS}}{31}{section*.14}
 \renewcommand *{\cftappendixname }{\bfseries {AP\^ENDICE} \space }
-\contentsline {appendix}{\chapternumberline {A}C\IeC {\'o}digo fonte}{34}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}C\IeC {\'o}digo fonte}{33}{appendix.A}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{\bfseries {ANEXO} \space }
-\contentsline {appendix}{\chapternumberline {A}Pesquisa IBGE}{35}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}Pesquisa IBGE}{34}{appendix.anexochapback.1}
