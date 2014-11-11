@@ -26,13 +26,6 @@
 	
 	<dependencies>
 		<dependency>
-			<groupId>br.senai.sc.anuncios</groupId>
-			<artifactId>entidades</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>${version.javaee}</version>
