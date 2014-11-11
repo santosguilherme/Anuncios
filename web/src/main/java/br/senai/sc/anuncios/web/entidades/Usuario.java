@@ -11,8 +11,7 @@ public class Usuario implements Serializable {
 	private String senha;
 	private String ativo;
 
-	public Usuario() {
-	}
+	public Usuario() {}
 
 	public Long getIndice() {
 		return indice;
