@@ -10,10 +10,30 @@
 	<title>Anúncios Web</title>
 </h:head>
 <h:body>
+
+		<script type="text/javascript">
+
+			$( document ).ready(function() {
+
+				$.ajax({
+					url:"/web/rest/anuncios/user/1",
+					type:"post",
+					data: JSON.stringify({titulo: "título", texto: "texto"}),
+					success: function(data){console.log(data);},
+					dataType: "json",
+					contentType:"application/json"
+				})
+				   
+			});
+		
+		</script>
+
+
 	<h:form>
+
 		<p:dataTable value="#{anunciosMBean.anuncios}" var="anuncio">
-			
-			<p:column headerText="Código">
+
+			<p:column headerText="Código1">
 				<h:outputText value="#{anuncio.indice}" />
 			</p:column>
 			<p:column headerText="Cadastrado">
@@ -28,12 +48,12 @@
 			<p:column headerText="Texto">
 				<h:outputText value="#{anuncio.texto}" />
 			</p:column>
-			
+
 			<p:column>
-				<p:commandButton icon="ui-icon-search" title="Visualizar anúncio"/>
+				<p:commandButton icon="ui-icon-search" title="Visualizar anúncio" />
 			</p:column>
-			
-		</p:dataTable>	
+
+		</p:dataTable>
 	</h:form>
 </h:body>
 </html>

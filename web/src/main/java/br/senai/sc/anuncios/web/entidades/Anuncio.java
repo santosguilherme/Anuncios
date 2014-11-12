@@ -1,20 +1,28 @@
 package br.senai.sc.anuncios.web.entidades;
 
 import java.io.Serializable;
-import java.util.Calendar;
+import java.util.Date;
+
+import com.google.gson.annotations.Expose;
 
 public class Anuncio implements Serializable {
 
 	private static final long serialVersionUID = -2695197813207977947L;
-
+	
+	@Expose
 	private Long indice;
+	
+	@Expose
 	private Usuario usuario;
+	
+	@Expose
 	private String titulo;
+	
+	@Expose
 	private String texto;
-	private Calendar dataCadastro;
-
-	public Anuncio() {
-	}
+	
+	@Expose
+	private Date dataCadastro;
 
 	public Long getIndice() {
 		return indice;
@@ -48,11 +56,11 @@ public class Anuncio implements Serializable {
 		this.texto = texto;
 	}
 
-	public Calendar getDataCadastro() {
+	public Date getDataCadastro() {
 		return dataCadastro;
 	}
 
-	public void setDataCadastro(Calendar dataCadastro) {
+	public void setDataCadastro(Date dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
 

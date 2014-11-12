@@ -2,14 +2,17 @@ package br.senai.sc.anuncios.web.entidades;
 
 import java.io.Serializable;
 
+import com.google.gson.annotations.Expose;
+
 public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	
+	@Expose
 	private Long indice;
 	private String email;
 	private String senha;
-	private String ativo;
+	private Boolean ativo;
 
 	public Usuario() {}
 
@@ -37,11 +40,11 @@ public class Usuario implements Serializable {
 		this.senha = senha;
 	}
 
-	public String getAtivo() {
+	public Boolean getAtivo() {
 		return ativo;
 	}
 
-	public void setAtivo(String ativo) {
+	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
 	}
 

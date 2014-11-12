@@ -6,38 +6,32 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Named;
+import javax.faces.bean.ManagedBean;
 
-import br.senai.sc.anuncios.entidades.Anuncio;
+import br.senai.sc.anuncios.web.entidades.Anuncio;
 
-@Named
-@RequestScoped
+@ManagedBean
 public class AnunciosMBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
 	private List<Anuncio> anuncios;
+	
 	private Anuncio anuncio;
 	
 	public AnunciosMBean() {
 	}
 	
-	@PostConstruct
-	public void init(){
-		this.anuncios = new ArrayList<>();
-		Anuncio ad = new Anuncio();
-		ad.setIndice(1L);
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(new Date());
-		ad.setDataCadastro(cal);
-		ad.setTitulo("Anúncio #1");
-		ad.setTexto("Este é o texto do anúncio");
-		getAnuncios().add(ad);
-	}
-
 	public List<Anuncio> getAnuncios() {
+		if(this.anuncios == null){
+			this.anuncios = new ArrayList<>();
+			Anuncio ad = new Anuncio();
+			ad.setIndice(1L);
+			ad.setDataCadastro(new Date());
+			ad.setTitulo("Anuncio #1");
+			ad.setTexto("Este e o texto do anuncio");
+			anuncios.add(ad);
+		}
 		return anuncios;
 	}
 
@@ -46,7 +40,14 @@ public class AnunciosMBean implements Serializable{
 	}
 
 	public Anuncio getAnuncio() {
-		return anuncio;
+		Anuncio ad = new Anuncio();
+		ad.setIndice(1L);
+		ad.setDataCadastro(new Date());
+		ad.setTitulo("Anï¿½ncio #1");
+		ad.setTexto("Este ï¿½ o texto do anï¿½ncio");
+		
+		return ad;
+		//return anuncio;
 	}
 
 	public void setAnuncio(Anuncio anuncio) {
