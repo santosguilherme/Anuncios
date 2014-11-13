@@ -2,13 +2,18 @@ package br.senai.sc.anuncios.web.entidades;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import com.google.gson.annotations.Expose;
 
+@Entity
 public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	@Expose
+	@Id
 	private Long indice;
 	private String email;
 	private String senha;

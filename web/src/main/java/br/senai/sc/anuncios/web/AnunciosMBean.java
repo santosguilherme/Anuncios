@@ -1,13 +1,13 @@
 package br.senai.sc.anuncios.web;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 
+import br.senai.sc.anuncios.ejb.service.AnuncioService;
 import br.senai.sc.anuncios.web.entidades.Anuncio;
 
 @ManagedBean
@@ -15,24 +15,16 @@ public class AnunciosMBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	@EJB
+	private AnuncioService anuncioService; 
+	
 	private List<Anuncio> anuncios;
 	
 	private Anuncio anuncio;
 	
-	public AnunciosMBean() {
-	}
-	
 	public List<Anuncio> getAnuncios() {
-		if(this.anuncios == null){
-			this.anuncios = new ArrayList<>();
-			Anuncio ad = new Anuncio();
-			ad.setIndice(1L);
-			ad.setDataCadastro(new Date());
-			ad.setTitulo("Anuncio #1");
-			ad.setTexto("Este e o texto do anuncio");
-			anuncios.add(ad);
-		}
-		return anuncios;
+		//this.anuncios = this.anuncioService.listarAnuncioDoUsuario(1L);
+		return this.anuncios;
 	}
 
 	public void setAnuncios(List<Anuncio> anuncios) {
@@ -40,18 +32,20 @@ public class AnunciosMBean implements Serializable{
 	}
 
 	public Anuncio getAnuncio() {
-		Anuncio ad = new Anuncio();
-		ad.setIndice(1L);
-		ad.setDataCadastro(new Date());
-		ad.setTitulo("An�ncio #1");
-		ad.setTexto("Este � o texto do an�ncio");
-		
-		return ad;
-		//return anuncio;
+		return this.anuncio;
 	}
 
 	public void setAnuncio(Anuncio anuncio) {
 		this.anuncio = anuncio;
 	}
-
+	
+	
+	public void testeSalvar(){
+		Anuncio a = new Anuncio();
+		a.setTexto("txt");
+		a.setTitulo("tlt");
+		a.setDataCadastro(new Date());
+		
+		anuncioService.salvarAnuncio(a);
+	}
 }

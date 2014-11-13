@@ -1,54 +1,42 @@
 package br.senai.sc.anuncios.ejb.service;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 
 import br.senai.sc.anuncios.web.entidades.Anuncio;
 
-import com.google.gson.Gson;
-
-@Path("/anuncios/user/{id}")
+@Stateless
 public class AnuncioService {
 
-	@PathParam("id")
-	private long idUser;
+	@PersistenceContext(unitName = "web-pu")
+	private EntityManager entityManager;
+
+	public Anuncio salvarAnuncio(Anuncio anuncio) {
+		try {
+			if (null != anuncio.getIndice()) {
+				entityManager.merge(anuncio);
+			} else {
+				entityManager.persist(anuncio);
+			}
+			entityManager.flush();
+			entityManager.clear();
+
+			return anuncio;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 	
-	@POST
-	@Consumes(MediaType.APPLICATION_JSON)
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response saveAnuncio(Anuncio anuncio) {
+	public List<Anuncio> listarAnuncioDoUsuario(final Long idUsario){
+		String strQuery = "SELECT a FROM Anuncio a WHERE a.usuario.indice = :ID ORDER BY a.indice DESC";
+        TypedQuery<Anuncio> query = entityManager.createQuery(strQuery, Anuncio.class);
+        query.setParameter("ID", idUsario);
 
-		return Response.ok(anuncio).build();
+        return query.getResultList();
 	}
-
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response listAnunciosForUser() {
-
-		System.out.println(idUser);
-
-		List<Anuncio> anuncios = new ArrayList<>();
-		Anuncio ad = new Anuncio();
-		ad.setIndice(1L);
-		ad.setDataCadastro(new Date());
-		ad.setTitulo("Anuncio #1");
-		ad.setTexto("Este e o texto do anuncio");
-		anuncios.add(ad);
-
-		Gson lista = new Gson();
-		String jsonLista = lista.toJson(anuncios);
-
-		return Response.ok(jsonLista).build();
-	}
-
 }

@@ -13,7 +13,7 @@
 
 		<script type="text/javascript">
 
-			$( document ).ready(function() {
+		/* 	$( document ).ready(function() {
 
 				$.ajax({
 					url:"/web/rest/anuncios/user/1",
@@ -24,12 +24,14 @@
 					contentType:"application/json"
 				})
 				   
-			});
+			}); */
 		
 		</script>
 
 
 	<h:form>
+	
+		<p:commandButton value="Salvar" actionListener="#{anunciosMBean.testeSalvar()}"/>
 
 		<p:dataTable value="#{anunciosMBean.anuncios}" var="anuncio">
 

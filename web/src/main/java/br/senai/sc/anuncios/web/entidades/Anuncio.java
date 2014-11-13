@@ -3,12 +3,17 @@ package br.senai.sc.anuncios.web.entidades;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import com.google.gson.annotations.Expose;
 
+@Entity
 public class Anuncio implements Serializable {
 
 	private static final long serialVersionUID = -2695197813207977947L;
 	
+	@Id
 	@Expose
 	private Long indice;
 	
@@ -63,5 +68,4 @@ public class Anuncio implements Serializable {
 	public void setDataCadastro(Date dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
-
 }
