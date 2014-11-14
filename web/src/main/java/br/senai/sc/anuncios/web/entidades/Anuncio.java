@@ -2,6 +2,7 @@ package br.senai.sc.anuncios.web.entidades;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,22 +15,23 @@ import com.google.gson.annotations.Expose;
 public class Anuncio implements Serializable {
 
 	private static final long serialVersionUID = -2695197813207977947L;
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Expose
 	private Long indice;
-	
+
 	@ManyToOne
 	@Expose
 	private Usuario usuario;
-	
+
 	@Expose
 	private String titulo;
-	
+
+	@Column(columnDefinition = "TEXT")
 	@Expose
 	private String texto;
-	
+
 	@Expose
 	private Long dataCadastroMillis;
 

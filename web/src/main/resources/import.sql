@@ -1,14 +1,8 @@
 -- import.sql
 INSERT INTO Usuario (indice, email, senha, ativo) VALUES (1, 'admin', 'admin', True);
 
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo1', 'Texto1', 100000000);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo2', 'Texto2', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo3', 'Texto3', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo4', 'Texto4', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo5', 'Texto5', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo6', 'Texto6', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo7', 'Texto7', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo8', 'Texto8', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo9', 'Texto9', 25050505);
-INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Titulo10', 'Texto10', 25050505);
-
+INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'SOBRADO 100M2 3 DORMS - PROX. AO METRO GUILHERMINA', 'REF:IMPERDIVEL!!! LINDO SOBRADO LOCALIZADO PROXIMO AO METRO GUILHERMINA, R. ALTO GARCAS E R. ALMEIDA BRANDAO, 84M2 A.U, C/ 3 DORMS SENDO 1 SUITE, WC, SALA P/ 2 AMBIENTES, LAVABO, COZINHA, AREA DE SERVICO E ESPACO GOURMET. DETALHES: CORRETORA ISABEL - 7748-2844-NEXTEL. ISABELLDECARIA@HOTMAIL.COM', 100000000);
+INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'SOBRADO 110M2, 3 DORMS - PROX. METRO GUILHERMINA', 'REF:SOBRADO EM CONSTRUCAO BEM LOCALIZADO, PROXIMO AO METRO GUILHERMINA, R. ASTORGA E AV. ANTONIO ESTEVAO DE CARVALHO, COM 110M2 DISTRIBUIDOS EM 3 DORMITORIOS, SENDO 1 SUITE, SALA AMPLA, COZINHA, AREA DE SERVICO, LAVABO E 2 VAGAS DE GARAGEM.PARA MAIS INFORMACOES: CORRETORA RUTI (TEL: VIVO - 9 6379-1786, TIM - 9 8334-1127). EMAIL: RUTI.CASALINDAIMOVEIS@YAHOO.COM.BR', 25050505);
+INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'Espetinhos Guarulhos - A melhor solucao para a sua festa, entre em contato ja !', 'Quer oferecer algo diferente em sua festa? Faca sua Cotacao com Espetinhos do Ale. Temos kit para Churrasco de Acordo com o Tamanho da sua Festa. Enviamos Churrasqueiro para preparar seu Churrasco. Atendemos todos os segmentos, pequenas Festas, festas em Pequenas e Grandes Empresas. Temos grande variedade de Espetos e Qualidade Comprovada. ', 25050505);
+INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'PLMudancas Transportando Sonhos', 'PLMudancas esta no mercado de trabalho para oferecer um servico qualificado , com profissional treinado .', 25050505);
+INSERT INTO Anuncio (usuario_indice, titulo, texto, dataCadastroMillis) VALUES (1, 'tv phillips 20 polegadas ', 'TV Phillips 20 polegadas prata com controle remoto e antena interna em bom estado para uso. Preco 120,00 Tel: (11) 4398-6999 cel 97333-2331 ', 25050505);

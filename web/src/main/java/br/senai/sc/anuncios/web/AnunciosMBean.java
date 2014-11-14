@@ -7,13 +7,13 @@ import java.util.List;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.bean.SessionScoped;
 
 import br.senai.sc.anuncios.ejb.service.AnuncioService;
 import br.senai.sc.anuncios.web.entidades.Anuncio;
 
 @ManagedBean
-@ViewScoped
+@SessionScoped
 public class AnunciosMBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -24,15 +24,6 @@ public class AnunciosMBean implements Serializable{
 	private List<Anuncio> anuncios;
 
 	private Anuncio anuncio;
-
-	public void testeSalvar(){
-		Anuncio a = new Anuncio();
-		a.setTexto("txt");
-		a.setTitulo("tlt");
-		a.setDataCadastroMillis(10000L);
-
-		anuncioService.salvarAnuncio(a);
-	}
 
 	public String dateToString(Long millis){
 		return new SimpleDateFormat("dd/MM/yyy HH:mm").format(new Date(millis));

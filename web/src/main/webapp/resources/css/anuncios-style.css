@@ -17,3 +17,19 @@
 .ui-datatable table {
 	margin-left: 0px;
 }
+
+.titulo-pagina {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.titulo-pagina-texto {
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.anuncio-titulo {
+	font-weight: bold;
+}

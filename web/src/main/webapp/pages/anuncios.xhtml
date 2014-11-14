@@ -11,10 +11,10 @@
 </h:head>
 <h:body>
 		<h:outputStylesheet name="anuncios-style.css" library="css"/>
+
 		<script type="text/javascript">
 
-			/*$( document ).ready(function() {
-
+			function salvarAnuncioTeste(){
 				$.ajax({
 					url:"/web/rest/anuncios/user/1",
 					type:"post",
@@ -23,13 +23,13 @@
 					dataType: "json",
 					contentType:"application/json"
 				})
-				   
-			});*/
-		
+			}		
 		</script>
 
 	<h:form id="form">
-		<p:commandButton value="Salvar" actionListener="#{anunciosMBean.testeSalvar()}" update="@form"/>
+		<div class="titulo-pagina">
+			<span class="titulo-pagina-texto">Anúncios cadastrados</span>
+		</div>
 
 		<p:dataTable value="#{anunciosMBean.anuncios}" var="anuncio">
 			<p:column headerText="Código" style="text-align: center; width:40px;">
@@ -59,11 +59,15 @@
 		<p:dialog id="dialog_anuncio" widgetVar="dialog" 
 				  closeOnEscape="true" 
 				  header="Anúncio - #{anunciosMBean.anuncio.titulo}"
-				  minimizable="false" maximizable="false" resizable="false" >
+				  minimizable="false" maximizable="false" resizable="false" 
+				  width="650" modal="true">
 				  
-				  <h:outputText value="#{anunciosMBean.anuncio.titulo}" />
-				  <br/>
+				  <h:outputText value="#{anunciosMBean.anuncio.titulo} - " styleClass="anuncio-titulo"/>
 				  <h:outputText value="#{anunciosMBean.anuncio.texto}" />
+				  
+				  <p:separator />
+				  <b>Cadastrado em: </b>#{anunciosMBean.dateToString(anunciosMBean.anuncio.dataCadastroMillis)} 
+				  <b>- Por: </b> #{anunciosMBean.anuncio.usuario.email} 
 		</p:dialog>
 	</h:form>
 </h:body>
