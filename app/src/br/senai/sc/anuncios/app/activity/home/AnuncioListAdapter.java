@@ -32,15 +32,16 @@ public class AnuncioListAdapter extends BaseAdapter{
 		LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View listView = inflater.inflate(R.layout.anuncios_list, parent, false);
 		
+		TextView dataCadastro = (TextView) listView.findViewById(R.id.cadastradoEm);
+		String dataCadastroString = new SimpleDateFormat("dd/MM/yyyy").format(new Date(anuncio.dataCadastroMillis));
+		dataCadastro.setText("(".concat(dataCadastroString).concat(")"));
+
 		TextView titulo = (TextView) listView.findViewById(R.id.titulo);
 		titulo.setText(anuncio.titulo);
 		
 		TextView texto = (TextView) listView.findViewById(R.id.texto);
 		texto.setText(anuncio.texto);
 		
-		TextView dataCadastro = (TextView) listView.findViewById(R.id.cadastradoEm);
-		String dataCadastroString = new SimpleDateFormat("dd/MM/yyyy").format(new Date(anuncio.dataCadastroMillis));
-		dataCadastro.setText(dataCadastroString);
 		
 		return listView;
 	}

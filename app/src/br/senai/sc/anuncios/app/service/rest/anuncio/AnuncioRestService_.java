@@ -8,8 +8,7 @@ package br.senai.sc.anuncios.app.service.rest.anuncio;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import br.senai.sc.anuncios.app.Anuncio;
-import br.senai.sc.anuncios.app.service.rest.anuncio.java.util.List_Anuncio;
+
 import org.androidannotations.api.rest.RestErrorHandler;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -18,6 +17,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
+
+import br.senai.sc.anuncios.app.Anuncio;
+import br.senai.sc.anuncios.app.service.rest.anuncio.java.util.List_Anuncio;
 
 public final class AnuncioRestService_
     implements AnuncioRestService

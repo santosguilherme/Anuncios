@@ -39,7 +39,7 @@ public class Login extends Activity {
 	
 	@Click(R.id.botao_login_entrar)
 	public void autenticarUsuario(){
-		ToastMessages.exibirToast(this, "Loading...");
+		ToastMessages.exibirToast(this, "Listando anúncios...");
 		startActivity(Home_.intent(this).get());
 	}
 	
@@ -50,5 +50,4 @@ public class Login extends Activity {
 	public void recuperarSenhaUsuario(View view){
 		ToastMessages.exibirToast(this, "Função não implementada");
 	}
-	
 }

@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_menu">Menu</string>
-    <string name="title_activity_novo_anuncio">NovoAnuncio</string>
+    <string name="title_activity_novo_anuncio">Novo Anúncio</string>
     <string name="action_settings">Settings</string>
 
 </resources>

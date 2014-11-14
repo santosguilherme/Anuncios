@@ -5,23 +5,30 @@
 
 package br.senai.sc.anuncios.app.activity.anuncio;
 
-import org.androidannotations.api.view.HasViews;
-import org.androidannotations.api.view.OnViewChangedNotifier;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
+import br.senai.sc.anuncios.app.R.id;
 import br.senai.sc.anuncios.app.R.layout;
+import br.senai.sc.anuncios.app.service.rest.anuncio.AnuncioRestService_;
+import org.androidannotations.api.BackgroundExecutor;
+import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
+import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class NovoAnuncio_
     extends NovoAnuncio
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
+    private Handler handler_ = new Handler(Looper.getMainLooper());
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,8 @@ public final class NovoAnuncio_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
+        anuncioRestService = new AnuncioRestService_();
     }
 
     @Override
@@ -63,6 +72,44 @@ public final class NovoAnuncio_
 
     public static NovoAnuncio_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new NovoAnuncio_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        tituloAnuncio = ((EditText) hasViews.findViewById(id.tituloAnuncio));
+        textoAnuncio = ((EditText) hasViews.findViewById(id.textoAnuncio));
+    }
+
+    @Override
+    public void exibirMensagemEVoltarParaMenu() {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                NovoAnuncio_.super.exibirMensagemEVoltarParaMenu();
+            }
+
+        }
+        );
+    }
+
+    @Override
+    public void salvarAnuncio() {
+        BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
+
+
+            @Override
+            public void execute() {
+                try {
+                    NovoAnuncio_.super.salvarAnuncio();
+                } catch (Throwable e) {
+                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+                }
+            }
+
+        }
+        );
     }
 
     public static class IntentBuilder_ {

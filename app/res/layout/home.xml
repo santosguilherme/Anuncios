@@ -9,42 +9,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:background="#151515"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff" >
 
             <Button
                 android:id="@+id/botao_menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="M" />
+                android:background="@drawable/menu_icon" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jornal" />
+                android:text="Jornal"
+                android:textColor="#fff"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome do Usuário" />
+                android:text="Nome do Usuário"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-		android:layout_marginBottom="5dp"        
-        android:background="#000" />
 
     <ListView
         android:id="@+id/listAnuncios"
