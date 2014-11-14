@@ -10,7 +10,6 @@ import org.androidannotations.annotations.WindowFeature;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -28,36 +27,26 @@ import br.senai.sc.anuncios.app.activity.login.Login_;
 public class Menu extends Activity {
 
 	private final String MENU_HOME = "Home";
-	private final String MENU_MEUS_ANUNCIOS = "Meus anúncios";
 	private final String MENU_NOVO_ANUNCIO = "Novo anúncio";
 	private final String MENU_SAIR = "Sair";
 
-	private final List<String> opcoesMenu = Arrays.asList(MENU_HOME,
-			MENU_MEUS_ANUNCIOS, MENU_NOVO_ANUNCIO, MENU_SAIR);
+	private final List<String> opcoesMenu = Arrays.asList(MENU_HOME, MENU_NOVO_ANUNCIO, MENU_SAIR);
 
 	private ListAdapter adapter;
 
 	@ViewById
 	ListView listOpcoesMenu;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-	}
-
 	@AfterViews
 	public void registrarListenerItem() {
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, opcoesMenu);
-		listOpcoesMenu.setAdapter(adapter);
+		this.adapter = new ArrayAdapter<String>(this , android.R.layout.simple_list_item_1, this.opcoesMenu);
+		this.listOpcoesMenu.setAdapter(this.adapter);
 
-		listOpcoesMenu
-				.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-					public void onItemClick(AdapterView<?> parentAdapter,
-							View view, int position, long id) {
-						onItemOpceosClick(view);
-					}
-				});
+		this.listOpcoesMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+				onItemOpceosClick(view);
+			}
+		});
 	}
 
 	private void onItemOpceosClick(View view) {
@@ -67,10 +56,6 @@ public class Menu extends Activity {
 		Intent intent = null;
 		switch (textoSelecionado) {
 			case MENU_HOME: {
-				intent = Home_.intent(this).get();
-				break;
-			}
-			case MENU_MEUS_ANUNCIOS: {
 				intent = Home_.intent(this).get();
 				break;
 			}

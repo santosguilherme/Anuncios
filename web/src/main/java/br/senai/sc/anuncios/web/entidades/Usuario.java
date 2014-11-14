@@ -3,6 +3,8 @@ package br.senai.sc.anuncios.web.entidades;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.google.gson.annotations.Expose;
@@ -10,16 +12,18 @@ import com.google.gson.annotations.Expose;
 @Entity
 public class Usuario implements Serializable {
 
-	private static final long serialVersionUID = 1L;
-	
-	@Expose
+	private static final long serialVersionUID = 1831455709442821970L;
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Expose
 	private Long indice;
 	private String email;
 	private String senha;
 	private Boolean ativo;
 
-	public Usuario() {}
+	public Usuario() {
+	}
 
 	public Long getIndice() {
 		return indice;
@@ -52,5 +56,4 @@ public class Usuario implements Serializable {
 	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
 	}
-
 }

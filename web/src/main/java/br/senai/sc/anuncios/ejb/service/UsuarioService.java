@@ -7,10 +7,10 @@ import javax.persistence.TypedQuery;
 
 import br.senai.sc.anuncios.web.entidades.Usuario;
 
-@Stateless(name = "UsuarioService")
+@Stateless
 public class UsuarioService {
 
-	@PersistenceContext(name = "principal", unitName = "web-pu")
+	@PersistenceContext(unitName = "web-pu")
 	private EntityManager entityManager;
 
 	public Usuario buscar(final Long indice) {

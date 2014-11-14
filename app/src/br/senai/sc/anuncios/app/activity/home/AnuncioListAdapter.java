@@ -1,5 +1,7 @@
 package br.senai.sc.anuncios.app.activity.home;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import android.annotation.SuppressLint;
@@ -36,6 +38,10 @@ public class AnuncioListAdapter extends BaseAdapter{
 		TextView texto = (TextView) listView.findViewById(R.id.texto);
 		texto.setText(anuncio.texto);
 		
+		TextView dataCadastro = (TextView) listView.findViewById(R.id.cadastradoEm);
+		String dataCadastroString = new SimpleDateFormat("dd/MM/yyyy").format(new Date(anuncio.dataCadastroMillis));
+		dataCadastro.setText(dataCadastroString);
+		
 		return listView;
 	}
 
@@ -51,6 +57,6 @@ public class AnuncioListAdapter extends BaseAdapter{
 
 	@Override
 	public long getItemId(int index) {
-		return getItem(index).id;
+		return getItem(index).indice;
 	}
 }

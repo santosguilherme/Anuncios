@@ -1,10 +1,12 @@
 package br.senai.sc.anuncios.web.entidades;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import com.google.gson.annotations.Expose;
 
@@ -14,9 +16,11 @@ public class Anuncio implements Serializable {
 	private static final long serialVersionUID = -2695197813207977947L;
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Expose
 	private Long indice;
 	
+	@ManyToOne
 	@Expose
 	private Usuario usuario;
 	
@@ -27,7 +31,7 @@ public class Anuncio implements Serializable {
 	private String texto;
 	
 	@Expose
-	private Date dataCadastro;
+	private Long dataCadastroMillis;
 
 	public Long getIndice() {
 		return indice;
@@ -61,11 +65,11 @@ public class Anuncio implements Serializable {
 		this.texto = texto;
 	}
 
-	public Date getDataCadastro() {
-		return dataCadastro;
+	public Long getDataCadastroMillis() {
+		return dataCadastroMillis;
 	}
 
-	public void setDataCadastro(Date dataCadastro) {
-		this.dataCadastro = dataCadastro;
+	public void setDataCadastroMillis(Long dataCadastroMillis) {
+		this.dataCadastroMillis = dataCadastroMillis;
 	}
 }

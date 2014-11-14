@@ -5,6 +5,9 @@
 
 package br.senai.sc.anuncios.app.activity.anuncio;
 
+import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedNotifier;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +15,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import br.senai.sc.anuncios.app.R.layout;
-import org.androidannotations.api.view.HasViews;
-import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class NovoAnuncio_
     extends NovoAnuncio

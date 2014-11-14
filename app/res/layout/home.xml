@@ -42,17 +42,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"        
         android:background="#000" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ListView
-            android:id="@+id/listAnuncios"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </ListView>
-    </ScrollView>
+    <ListView
+        android:id="@+id/listAnuncios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

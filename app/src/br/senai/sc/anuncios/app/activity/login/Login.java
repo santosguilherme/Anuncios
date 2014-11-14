@@ -4,15 +4,18 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
+import org.androidannotations.annotations.WindowFeature;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import br.senai.sc.anuncios.app.R;
 import br.senai.sc.anuncios.app.activity.home.Home_;
 import br.senai.sc.anuncios.app.messages.ToastMessages;
 
+@WindowFeature({ Window.FEATURE_NO_TITLE})
 @EActivity(R.layout.login)
 public class Login extends Activity {
 	

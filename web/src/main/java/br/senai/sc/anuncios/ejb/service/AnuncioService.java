@@ -39,4 +39,8 @@ public class AnuncioService {
 
         return query.getResultList();
 	}
+	
+	public List<Anuncio> listaTodosAnuncios(){
+		return entityManager.createQuery("from Anuncio", Anuncio.class).getResultList();
+	}
 }

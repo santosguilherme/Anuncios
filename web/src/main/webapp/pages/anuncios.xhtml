@@ -10,10 +10,10 @@
 	<title>Anúncios Web</title>
 </h:head>
 <h:body>
-
+		<h:outputStylesheet name="anuncios-style.css" library="css"/>
 		<script type="text/javascript">
 
-		/* 	$( document ).ready(function() {
+			/*$( document ).ready(function() {
 
 				$.ajax({
 					url:"/web/rest/anuncios/user/1",
@@ -24,25 +24,22 @@
 					contentType:"application/json"
 				})
 				   
-			}); */
+			});*/
 		
 		</script>
 
-
-	<h:form>
-	
-		<p:commandButton value="Salvar" actionListener="#{anunciosMBean.testeSalvar()}"/>
+	<h:form id="form">
+		<p:commandButton value="Salvar" actionListener="#{anunciosMBean.testeSalvar()}" update="@form"/>
 
 		<p:dataTable value="#{anunciosMBean.anuncios}" var="anuncio">
-
-			<p:column headerText="Código1">
+			<p:column headerText="Código" style="text-align: center; width:40px;">
 				<h:outputText value="#{anuncio.indice}" />
 			</p:column>
-			<p:column headerText="Cadastrado">
-				<h:outputText value="#{anuncio.dataCadastro}" />
-			</p:column>
-			<p:column headerText="Usuário">
+			<p:column headerText="Usuário" style="width: 200px;">
 				<h:outputText value="#{anuncio.usuario.email}" />
+			</p:column>
+			<p:column headerText="Cadastrado" style="text-align: center; width: 100px;">
+				<h:outputText value="#{anunciosMBean.dateToString(anuncio.dataCadastroMillis)}" />
 			</p:column>
 			<p:column headerText="Título">
 				<h:outputText value="#{anuncio.titulo}" />
@@ -50,12 +47,24 @@
 			<p:column headerText="Texto">
 				<h:outputText value="#{anuncio.texto}" />
 			</p:column>
-
-			<p:column>
-				<p:commandButton icon="ui-icon-search" title="Visualizar anúncio" />
+			<p:column style="text-align:center; width: 32px;">
+				<p:commandButton icon="ui-icon-search" 
+				 				 title="Visualizar anúncio" 
+				 				 actionListener="#{anunciosMBean.setAnuncio(anuncio)}"
+				 				 update=":form:dialog_anuncio"
+				 				 oncomplete="PF('dialog').show();" />
 			</p:column>
-
 		</p:dataTable>
+		
+		<p:dialog id="dialog_anuncio" widgetVar="dialog" 
+				  closeOnEscape="true" 
+				  header="Anúncio - #{anunciosMBean.anuncio.titulo}"
+				  minimizable="false" maximizable="false" resizable="false" >
+				  
+				  <h:outputText value="#{anunciosMBean.anuncio.titulo}" />
+				  <br/>
+				  <h:outputText value="#{anunciosMBean.anuncio.texto}" />
+		</p:dialog>
 	</h:form>
 </h:body>
 </html>

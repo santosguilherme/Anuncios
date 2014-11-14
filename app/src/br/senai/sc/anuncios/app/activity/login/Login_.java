@@ -37,6 +37,7 @@ public final class Login_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
+        requestWindowFeature(1);
     }
 
     @Override

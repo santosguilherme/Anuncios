@@ -10,7 +10,6 @@ import br.senai.sc.anuncios.app.R;
 @EActivity(R.layout.novo_anuncio)
 public class NovoAnuncio extends Activity {
 
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.novo_anuncio, menu);

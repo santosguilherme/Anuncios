@@ -1,10 +1,7 @@
 package br.senai.sc.anuncios.rest;
 
-import java.util.Date;
-
 import javax.ejb.EJB;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import javax.ejb.Stateless;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -22,12 +19,13 @@ import br.senai.sc.anuncios.web.entidades.Usuario;
 import com.google.gson.Gson;
 
 @Path("/anuncios/user/{id}")
+@Stateless
 public class AnuncioRestService extends AnuncioService {
 
 	@PathParam("id")
 	private long idUser;
 
-	@EJB(name = "UsuarioService")
+	@EJB
 	private UsuarioService usuarioService;
 
 	@POST
@@ -43,12 +41,12 @@ public class AnuncioRestService extends AnuncioService {
 
 	@Override
 	public Anuncio salvarAnuncio(Anuncio anuncio) {
-		Usuario user = getUsuarioService().buscar(idUser);
+		Usuario user = this.usuarioService.buscar(idUser);
 		if (user == null) {
 			return null;
 		}
 		anuncio.setUsuario(user);
-		anuncio.setDataCadastro(new Date());
+		anuncio.setDataCadastroMillis(1000L);
 
 		return super.salvarAnuncio(anuncio);
 	}
@@ -58,16 +56,5 @@ public class AnuncioRestService extends AnuncioService {
 	public Response listAnunciosForUser() {
 		String jsonLista = new Gson().toJson(listarAnuncioDoUsuario(idUser));
 		return Response.ok(jsonLista).build();
-	}
-
-	public UsuarioService getUsuarioService() {
-		if (this.usuarioService == null) {
-			try {
-				this.usuarioService = (UsuarioService) new InitialContext().lookup("java:module/UsuarioService");
-			} catch (NamingException e) {
-				e.printStackTrace();
-			}
-		}
-		return usuarioService;
 	}
 }

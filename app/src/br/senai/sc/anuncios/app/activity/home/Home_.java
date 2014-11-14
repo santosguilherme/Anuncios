@@ -5,16 +5,22 @@
 
 package br.senai.sc.anuncios.app.activity.home;
 
+import java.util.List;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ListView;
+import br.senai.sc.anuncios.app.Anuncio;
 import br.senai.sc.anuncios.app.R.id;
 import br.senai.sc.anuncios.app.R.layout;
+import br.senai.sc.anuncios.app.service.rest.anuncio.AnuncioRestService_;
+import org.androidannotations.api.BackgroundExecutor;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
@@ -25,6 +31,7 @@ public final class Home_
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
+    private Handler handler_ = new Handler(Looper.getMainLooper());
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +44,7 @@ public final class Home_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
+        anuncioRestService = new AnuncioRestService_();
         requestWindowFeature(1);
     }
 
@@ -89,6 +97,38 @@ public final class Home_
             }
         }
         iniciarListAdapter();
+    }
+
+    @Override
+    public void atualizarListaAnuncios(final List<Anuncio> anuncios) {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                Home_.super.atualizarListaAnuncios(anuncios);
+            }
+
+        }
+        );
+    }
+
+    @Override
+    public void searchAsync(final Long userId) {
+        BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
+
+
+            @Override
+            public void execute() {
+                try {
+                    Home_.super.searchAsync(userId);
+                } catch (Throwable e) {
+                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+                }
+            }
+
+        }
+        );
     }
 
     public static class IntentBuilder_ {
