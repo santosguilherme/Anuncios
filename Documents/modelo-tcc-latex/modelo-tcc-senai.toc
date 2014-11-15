@@ -10,16 +10,20 @@
 \contentsline {subsection}{\numberline {2.1.1}Business Process Management (BPM)}{14}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Business Process Modeling Notation (BPMN)}{15}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Processo}{16}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}PLATAFORMAS DE DESENVOLVIMENTO M\IeC {\'O}VEL}{18}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Android}{18}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}iOS}{19}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Windows Phone}{19}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}CASOS DE USO}{20}{section.2.3}
+\contentsline {section}{\numberline {2.2}CASOS DE USO}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}PLATAFORMAS DE DESENVOLVIMENTO M\IeC {\'O}VEL}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Android}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}iOS}{19}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Windows Phone}{20}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}WEBSERVICE}{20}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}REST}{20}{subsection.2.4.1}
 \contentsline {chapter}{\chapternumberline {3}PROCEDIMENTOS METODOL\IeC {\'O}GICOS}{21}{chapter.3}
 \contentsline {chapter}{\chapternumberline {4}RESULTADOS E DISCUSS\IeC {\~O}ES}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}PROCESSO ATUAL}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}OTIMIZA\IeC {\c C}\IeC {\~A}O DO PROCESSO}{24}{section.4.2}
 \contentsline {section}{\numberline {4.3}MODELO DE CASO DE USO}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4}APLICATIVO}{25}{section.4.4}
-\contentsline {chapter}{\chapternumberline {5}CONCLUS\IeC {\~A}O}{28}{chapter.5}
-\contentsline {chapter}{\bfseries {REFER\^ENCIAS}}{29}{section*.11}
+\contentsline {section}{\numberline {4.4}APLICA\IeC {\c C}\IeC {\~A}O}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Aplicativo Android}{28}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Aplica\IeC {\c c}\IeC {\~a}o Web}{32}{subsection.4.4.2}
+\contentsline {chapter}{\chapternumberline {5}CONCLUS\IeC {\~A}O}{34}{chapter.5}
+\contentsline {chapter}{\bfseries {REFER\^ENCIAS}}{35}{section*.11}

@@ -72,8 +72,8 @@ public final class Login_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        usuarioEditText = ((EditText) hasViews.findViewById(id.usuario_login));
         senhaEditText = ((EditText) hasViews.findViewById(id.senha_login));
+        usuarioEditText = ((EditText) hasViews.findViewById(id.usuario_login));
         {
             View view = hasViews.findViewById(id.botao_login_entrar);
             if (view!= null) {
