@@ -1,14 +1,16 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Diagrama de Processos de Neg\IeC {\'o}cios (DPN)} }}{16}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Vis\IeC {\~a}o sist\IeC {\^e}mica dos processos} }}{17}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Elementos para representar o processo de neg\IeC {\'o}cio} }}{18}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Diagrama de macro processo do processo atual} }}{23}{figure.4.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {Diagrama de macro processo do processo otimizado} }}{24}{figure.4.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Modelo de Caso de Uso} }}{25}{figure.4.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Estrutura das aplica\IeC {\c c}\IeC {\~o}es desenvolvidas} }}{28}{figure.4.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Tela inicial do aplicativo} }}{29}{figure.4.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Tela de visualiza\IeC {\c c}\IeC {\~a}o dos an\IeC {\'u}ncios cadastrados} }}{30}{figure.4.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Tela de menu} }}{31}{figure.4.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Tela de cadastro de an\IeC {\'u}ncio} }}{32}{figure.4.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Tela visualiza\IeC {\c c}\IeC {\~a}o de todos os an\IeC {\'u}ncios} }}{33}{figure.4.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Tela visualiza\IeC {\c c}\IeC {\~a}o de an\IeC {\'u}ncio selecionado} }}{33}{figure.4.13}
+\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Diagrama de Processos de Neg\IeC {\'o}cios (DPN)} }}{17}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Vis\IeC {\~a}o sist\IeC {\^e}mica dos processos} }}{18}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Elementos para representar o processo de neg\IeC {\'o}cio} }}{19}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Diagrama de macroprocesso do processo atual} }}{24}{figure.4.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {Diagrama de BPMN do processo atual} }}{25}{figure.4.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Diagrama de macroprocesso do processo otimizado} }}{26}{figure.4.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Diagrama de BPMN do processo otimizado} }}{27}{figure.4.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Modelo de Caso de Uso} }}{28}{figure.4.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Estrutura das aplica\IeC {\c c}\IeC {\~o}es desenvolvidas} }}{31}{figure.4.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Tela inicial do aplicativo} }}{32}{figure.4.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Tela de visualiza\IeC {\c c}\IeC {\~a}o dos an\IeC {\'u}ncios cadastrados} }}{33}{figure.4.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Tela de menu} }}{34}{figure.4.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Tela de cadastro de an\IeC {\'u}ncio} }}{35}{figure.4.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Tela visualiza\IeC {\c c}\IeC {\~a}o de todos os an\IeC {\'u}ncios} }}{36}{figure.4.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Tela visualiza\IeC {\c c}\IeC {\~a}o de an\IeC {\'u}ncio selecionado} }}{36}{figure.4.15}
