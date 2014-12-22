@@ -112,10 +112,10 @@
 \orientadortcc{Prof. \imprimirorientador, Esp. (SENAI/SC)}
 \coordenador{Profa. Luciana Schimitz, Esp. (SENAI/SC)}
 \coordenadortcc{Profa. Jaqueline Voltolini de Almeida, Me. (SENAI/SC)}
-\examinador{Prof. Fulado de tal, Me. (SENAI/SC)}
+\examinador{Prof. Rodrigo Fortes, Esp. (SENAI/SC)}
 \preambulo{Trabalho de Conclusão de Curso apresentado à Banca Examinadora do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia do SENAI Florianópolis como requisito parcial para obtenção do Grau de Tecnólogo em Análise e Desenvolvimento de Sistemas.}
 \proforientador{Professor Orientador: \imprimirorientador.}
-\datadefesa{\uppercase{11 de dezembro de 2014}}
+\datadefesa{\uppercase{18 de dezembro de 2014}}
 \local{Florianópolis/SC}
 \data{2014}
 % **************************************************
@@ -436,9 +436,32 @@ A linguagem de programação utilizada para desenvolvimento nesta plataforma é 
 Assim como as outras plataformas citadas nos parágrafos anteriores, a Microsoft também possui a sua loja de aplicativos para a plataforma, a Windows Phone Store.
 
 
-\section{WEBSERVICE}
+\section{WEB SERVICES}
+
+\citeonline{qian2010desenvolvimento} define \textit{web services}, ou serviços \textit{web}, como uma categoria de aplicativos instalados em servidor que disponibilizam serviços via rede usando documentos de padrões \textit{Extensible Markup Language} (XML) e protocolos de \textit{Internet}.  Serviços \textit{web} são construídos utilizando um padrão de arquitetura chamado de \textit{Service-Oriented Architecture} (SOA).  
+
+O estilo de arquitetura SOA possui um conceito implícito, definindo que diferentes tarefas de um processo de negócio sejam disponibilizadas para serem utilizadas via serviços \textit{web}. Esta arquitetura possui algumas finalidades como: a) interoperabilidade; b) fraco acoplamento entre aplicativos de \textit{software}; c) uma separação de responsabilidades; d) reutilização de serviços \cite{qian2010desenvolvimento}.
+
+A maior dificuldade no desenvolvimento de um projeto utilizando a arquitetura orientada a serviços, é desenhar suas interfaces, que serão os contratos de como eles devem ser solicitados e respondidos. Esta arquitetura esta focada na integração dos serviços independente de negócios ou da tecnologia utilizada na implementação, permitindo assim que negócios foquem em suas necessidades e não nas tecnologias utilizadas pelos \textit{softwares} \cite{qian2010desenvolvimento}.
+
+\textit{Web services} utilizam protocolos de comunicação e representação baseada em XML para implementar uma arquitetura baseada em serviços, visando a independência de plataforma e alcançar a interoperabilidade. Estes serviços podem normalmente são utilizados pela \textit{Internet}, porém também podem ser disponibilizados apenas em redes locais, como \textit{intranets} corporativas \cite{qian2010desenvolvimento}.
+
+\citeonline{qian2010desenvolvimento} define quatro tecnologias que são utilizadas em conjunto por \textit{web services} para fornecer uma ferramenta universal para estruturar e definir tipos de dados XML, trocar dados entre aplicativos em uma rede (\textit{Simple Object Access Protocol} - SOAP), definir interfaces de aplicativos (\textit{Web Services Description Language} - WSDL) e publicar e encontrar informações sobre serviços \textit{web} existentes (\textit{Universal Description, Discovery and Integration} - UDDI).
+
 
 \subsection{REST}
+
+
+\citeonline{deitel8ed} definem o \textit{Representational State Transfer} (REST) como um estilo arquitetônico utilizado no desenvolvimento de \textit{web services}. A Partir do termo REST, apareceu uma definição mais específica destes serviços \textit{web}, chamado de RESTful. Mesmo REST não seja definido como um padrão, a implementação de serviços \textit{web} RESTful são implementados obedecendo as regras do REST e utilizando os padrões \textit{web} \cite{restPhpJquery}.
+
+RESTful pode ser definido como uma maneira universal de enviar e receber dados entre cliente e servidor. Cada método implementado no serviço é identificado por um \textit{Uniform Resource Locator} (URL) único, permitindo que o serviço saiba qual operação deve ser executada quando a solicitação chegar ao servidor. As solicitações para os serviços \textit{web} possuem algumas configurações obedecendo aos métodos \textit{GET, POST, PUT} e \textit{DELETE} do \textit{Hypertext Transfer Protocol} (HTTP) \cite{deitel8ed}. Segundo \citeonline{restPhpJquery}, utilizar serviços \textit{web} RESTful, quer dizer que o acesso ao servidor é de maneira \textit{stateless}, ou seja, o cliente e o servidor não conhecem o estado um do outro.
+
+\begin{citacao}
+Serviços RESTful são alternativas àqueles implementados com Simple Object Access Protocol (SOAP). Diferentemente dos serviços web baseados em SOAP, a solicitação e a resposta dos serviços REST não são empacotados em envelopes. O REST também não está limitado a retornar dados no formato XML. Ele pode utilizar vários formatos como XML, JavaScript Object Notation (JSON),  HyperText Markup Language (HTML), texto sem formatação e arquivos de mídia \cite[p. 1020]{deitel8ed}.
+\end{citacao}
+
+O padrão de requisição e resposta utilizados pelos serviços REST possibilita a independência entre o servidor e o cliente, pois a tecnologia utilizada tanto no cliente quanto no servidor podem ser diferentes, desde que o padrão seja mantido \cite{restPhpJquery}.
+
 
 
 % ---
@@ -525,7 +548,7 @@ Para contemplar este modelo, é necessário o uso do aplicativo móvel para capt
 
 Com a cobrança e a inserção dos anúncios também automatizados, o envio do anúncio cadastrado pelo aplicativo será direto para a impressão, reduzindo o número de etapas e recursos necessários para o processo poder ser realizado.
 
-A figura \ref{fig-bpmn-processo-otimizado} apresenta a modelagem do processo otimizado utilizando a notação BPMN. Analisando este modelo, é possível notar que o número de fluxos diminuiu, pois os passos que passavam pela agência, operador comercial e pelo Diagramador não estão mais presentes ou foram realocados. 
+A figura \ref{fig-bpmn-processo-otimizado} apresenta a modelagem do processo otimizado utilizando a notação BPMN. Analisando este modelo, é possível notar que o número de fluxos diminuiu, pois os passos que passavam pela agência, operador comercial e pelo Diagramador não estão mais presentes ou foram realocados. \\ \\ \\ \\ 
 
 \begin{figure}[h]
 	\begin{center}
@@ -649,7 +672,7 @@ O aplicativo Android comunica-se com o servidor de aplicação por meio de um \t
 
 Um dos objetivos do trabalho era o desenvolvimento de um protótipo de um aplicativo Android que contemplasse o modelo otimizado do processo de negócio da captação de anúncio. Através do aplicativo, o cliente tem liberdade de inserir seu próprio anúncio e visualizar seus anúncios já enviados. As figuras a seguir apresentam as telas e funcionalidades desenvolvidas no protótipo.
 
-A figura \ref{fig-android-login} mostra a tela inicial do aplicativo, é nesta tela que o usuário autentica-se. Ao clicar no botão "Entrar", o aplicativo leva o usuário até a tela "Home" com seus anúncios já cadastrados. \\ \\ \\ \\ \\
+A figura \ref{fig-android-login} mostra a tela inicial do aplicativo, é nesta tela que o usuário insere seus dados para entrar no sistema. Ao clicar no botão "Entrar", o aplicativo leva o usuário até a tela "Home", com seus anúncios já cadastrados. \\ \\ \\ \\ \\
 
 \begin{figure}[h]
 	\begin{center}
@@ -662,7 +685,7 @@ A figura \ref{fig-android-login} mostra a tela inicial do aplicativo, é nesta t
 \end{figure}
 
 
-A figura \ref{fig-android-meus-anuncios} apresenta a tela seguinte a autenticação do usuário. Ela possui um botão para ir para o menu, o nome do veículo que o aplicativo foi desenvolvido, o nome do usuário que esta utilizando o aplicativo e os seus anúncios cadastrados em ordem decrescente. Ao clicar no botão "Menu" ele leva usuário até a tela de menu do aplicativo. \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+A figura \ref{fig-android-meus-anuncios} apresenta a tela seguinte a autenticação do usuário. Ela possui um botão para ir para o menu, o nome do veículo que o aplicativo foi desenvolvido, o nome do usuário que esta utilizando o aplicativo e os seus anúncios cadastrados em ordem decrescente. Ao clicar no botão "Menu", o aplicativo apresenta ao usuário a tela de menu. \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 
 \begin{figure}[h]
 	\begin{center}
@@ -734,19 +757,21 @@ A figura \ref{fig-anuncio-web} apresenta a tela com os detalhes do anúncio sele
 
 Este trabalho teve como propósito analisar e modelar o processo que envolve a captação de anúncios de uma empresa de mídia impressa utilizando BPM. A partir do modelo desenvolvido, realizar o aperfeiçoamento do mesmo, propor um novo modelo de processo e desenvolver um protótipo de aplicativo \textit{mobile} que contemplasse o modelo do processo de negócio proposto.
 
-Todos os objetivos iniciais do trabalho foram concluídos com sucesso, o modelo de processo atual foi analisado e modelado com um diagrama de macroprocesso, partindo deste modelo, foi possível identificar melhorias a serem oferecias no processo, como resultado desta identificação,  foi proposto um novo modelo de processo de negócio através de outro diagrama de macroprocesso. Além do protótipo do aplicativo \textit{mobile}, foi possível também desenvolver um módulo \textit{web} extra, que agregou ao valor trabalho, trazendo maior visibilidade do objetivo do aplicativo de fornecer autonomia ao cliente.
+Para que fosse possível fazer a análise, foi realizado a modelagem do processo atual com um diagrama de macroprocesso e um diagrama de casos de uso para compreender as regras de negócios envolvidas e quais os atores envolvidos no processo. Partindo destes modelos, foi possível identificar melhorias a serem oferecidas no processo. Como resultado desta análise, foi proposto um novo modelo de processo de negócio.
 
-Para alcançar os objetivos traçados no início do projeto e tornar o trabalho uma contribuição real, foi necessário muito esforço e aprendizado. O autor obteve conhecimento significante em diversas áreas, desde a área de foco do trabalho, a captação de anúncios de mídias impressas, passando pela modelagem de processos de negócio e BPM, até chegar no desenvolvimento de aplicativos \textit{mobile} utilizando Android e a criação e comunicação de \textit{webservices} com aplicativos Android e aplicações \textit{web}.
+Em cima do novo modelo foi realizado um protótipo do aplicativo \textit{mobile}, no qual fosse possível o usuário realizar o cadastro dos anúncios de forma a realizar o CSU01. Para realizar o CSU02, desenvolveu-se um módulo \textit{web} extra, para demonstrar como o macroprocesso melhorado pode fornecer uma maior autonomia ao cliente e a empresa de captação de anúncios.
 
-As maiores dificuldades encontradas pelo autor durante o desenvolvimento deste trabalho foram a sua inexperiência com modelagem de processos de negócios, o fato de não conhecer e ter que aprender sobre o desenvolvimento de aplicativos \textit{mobile} para a plataforma Android. Porém sua maior dificuldade foi pelo fato de ter saído da empresa de desenvolvimento de \textit{softwares} para veículos de comunicação onde trabalhava e ter ido para outra empresa de desenvolvimento de \textit{softwares}, onde perdeu o contato próximo que possuía com o processo de negócio.
+Para que o presente trabalho pudesse se tornar uma contribuição real, foi necessário muito esforço e aprendizado. O autor obteve conhecimento significante em diversas áreas, desde a área de foco do trabalho, a captação de anúncios de mídias impressas, passando pela modelagem de processos de negócio e BPM, até chegar no desenvolvimento de aplicativos \textit{mobile} utilizando Android e a criação e comunicação de \textit{webservices} com aplicativos Android e aplicações \textit{web}.
 
-Uma das principais contribuições do trabalho, tanto para a área do curso, quanto para as outras áreas de conhecimento, foi a modelagem e documentação de um processo de negócio que é conhecido apenas pelos que estão envolvidos no cotidiano de um veículo de mídia impressa, porém não possuí uma documentação.
+Dentro as dificuldades encontradas para a realização do desenvolvimento deste trabalho, podem ser apontadas a inexperiência com modelagem de processos de negócios, o fato de não conhecer e ter que aprender sobre o desenvolvimento de aplicativos \textit{mobile} para a plataforma Android. Porém sua maior dificuldade foi pelo fato de ter saído da empresa de desenvolvimento de \textit{softwares} para veículos de comunicação onde trabalhava e ter ido para outra empresa de desenvolvimento de \textit{softwares}, onde perdeu o contato próximo que possuía com o processo de negócio.
+
+Uma das principais contribuições do trabalho, tanto para a área da TIC, quanto para as outras áreas de conhecimento, foram a modelagem e documentação de um processo de negócio que é conhecido apenas pelos que estão envolvidos no cotidiano de um veículo de mídia impressa, porém não possuí uma documentação.
 
 Outra principal contribuição, foi mostrar como um \textit{software} pode ser envolvido nas etapas de um processo para melhorá-lo e torná-lo mais otimizado. Porém foi possível identificar que este envolvimento não é uma simples tarefa, são necessários estudos, análise e modelagem tanto do processo como do \textit{software} a ser inserido no mesmo.
 
-Como consequência do desenvolvimento do aplicativo \textit{mobile}, também foi possível analisar e perceber o forte crescimento do mercado de dispositivos móveis e de seus aplicativos, mostrando uma forte tendência do desenvolvimento de \textit{software} para a área de dispositivos móveis.
+Como consequência do desenvolvimento do aplicativo \textit{mobile}, também foi possível analisar e perceber o forte crescimento do mercado de dispositivos móveis e de seus aplicativos, mostrando que é uma forte tendência do desenvolvimento de \textit{software}.
 
-Tendo em vista que o trabalho possui um conteúdo amplo e que não foi possível abordá-lo por completo neste trabalho, devido ao tempo disponível para o desenvolvimento do mesmo ser curto, sugere-se como melhorias e trabalhos futuros uma análise mais aprofundada para aplicativo \textit{mobile}; o seu desenvolvimento por completo, como por exemplo as funcionalidades de autenticação de usuário, edição de anúncios e um módulo para contemplar o pagamento dos anúncios; análise e o desenvolvimento do módulo \textit{web} para os funcionários e clientes do veículo.
+Tendo em vista que o trabalho possui um conteúdo interdisciplinar no qual envolve um problema real, não foi possível abordá-lo por completo neste trabalho, devido ao tempo disponível para o desenvolvimento do mesmo ser curto, sugere-se para trabalhos futuros uma análise mais aprofundada para aplicativo \textit{mobile}; o seu desenvolvimento por completo, atendendo todas as atividades do macroprocesso proposto com as funcionalidades de autenticação de usuário, edição de anúncios e um módulo para contemplar o pagamento dos anúncios. Adiciona-se também aos trabalhos futuros, uma necessidade de uma análise mais aprofundada módulo \textit{web} para os funcionários e clientes do veículo de mídia impressa que interaja com o protótipo \textit{mobile} desenvolvido neste trabalho.
 
 
 % **************************************************

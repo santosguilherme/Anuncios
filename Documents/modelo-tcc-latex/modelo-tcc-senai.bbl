@@ -21,6 +21,11 @@
 {BEZERRA, E. \emph{Princ{\'\i}pios de An{\'a}lise e Projeto de Sistemas com
   UML}. 2. ed. Rio de Janeiro: Elsevier, 2007.}
 
+\bibitem[DEITEL e DEITEL 2010]{deitel8ed}
+\abntrefinfo{DEITEL e DEITEL}{DEITEL; DEITEL}{2010}
+{DEITEL, H.~M.; DEITEL, P.~J. \emph{Java}: como programar. 8. ed. S{\~a}o
+  Paulo: Prentice Hall, 2010.}
+
 \bibitem[Eriksson e Penker 2000]{erikssonPenkerUML}
 \abntrefinfo{Eriksson e Penker}{ERIKSSON; PENKER}{2000}
 {ERIKSSON, H.~E.; PENKER, M. \emph{Business Modeling with UML}. Nova Iorque:
@@ -104,10 +109,19 @@ ISBN 9788575223628. Dispon{\'\i}vel em:
 {PILONE, D.; PILONE, T. \emph{Use a Cabe{\c{c}}a!}: desenvolvendo para iphone.
   Rio de Janeiro: Alta Books, 2011.}
 
+\bibitem[QIAN et al. 2010]{qian2010desenvolvimento}
+\abntrefinfo{QIAN et al.}{QIAN et al.}{2010}
+{QIAN, K. et al. \emph{Desenvolvimento Web Java}. Rio de Janeiro: LTC, 2010.}
+
 \bibitem[Rozenfeld 2006]{rozenfeldProcesso}
 \abntrefinfo{Rozenfeld}{ROZENFELD}{2006}
 {ROZENFELD, H. \emph{Gest{\~a}o de desenvolvimento de produtos}: uma
   refer{\^e}ncia para a melhoria do processo. S{\~a}o Paulo: Saraiva, 2006.}
+
+\bibitem[Schmitz 2013]{restPhpJquery}
+\abntrefinfo{Schmitz}{SCHMITZ}{2013}
+{SCHMITZ, D. \emph{Criando Sistemas RESTful com PHP e JQuery}: Uma abordagem
+  prática na criação de um sistema de vendas. S{\~a}o Paulo: Novatec, 2013.}
 
 \bibitem[Schuch 2013]{schuchTeletime}
 \abntrefinfo{Schuch}{SCHUCH}{2013}
@@ -128,7 +142,7 @@ Dispon{\'\i}vel em:
 
 \bibitem[Tanenbaum 2003]{tanenbaum2003redes}
 \abntrefinfo{Tanenbaum}{TANENBAUM}{2003}
-{TANENBAUM, A.~S. \emph{Redes de computadoras}. 4. ed. Rio de Janeiro: Campus,
+{TANENBAUM, A.~S. \emph{Redes de computadores}. 4. ed. Rio de Janeiro: Campus,
   Elsevier, 2003.}
 
 \bibitem[Valle e Barbar{\'a} 2009]{valleBarbaraBPMN}
