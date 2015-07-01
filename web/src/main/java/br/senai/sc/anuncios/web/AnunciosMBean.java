@@ -26,6 +26,9 @@ public class AnunciosMBean implements Serializable{
 	private Anuncio anuncio;
 
 	public String dateToString(Long millis){
+		if(millis == null){
+			return "";
+		}
 		return new SimpleDateFormat("dd/MM/yyy HH:mm").format(new Date(millis));
 	}
 
