@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.senai.sc.anuncios</groupId>
 	<artifactId>web</artifactId>
@@ -9,21 +10,13 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-
 		<!-- Dependencies Version -->
 		<version.javaee>6.0</version.javaee>
 		<version.hibernate>4.2.0.Final</version.hibernate>
 		<version.primefaces>5.0</version.primefaces>
 		<version.google.gson>2.3</version.google.gson>
-
-		<!-- Maven plugins -->
-		<version.jboss.maven.plugin>7.3.Final</version.jboss.maven.plugin>
-		<version.compiler.plugin>2.3.1</version.compiler.plugin>
-		<version.war.plugin>2.1.1</version.war.plugin>
-		<maven.surefire.plugin>2.17</maven.surefire.plugin>
-		<maven.surefire.junit47>2.17</maven.surefire.junit47>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -62,29 +55,14 @@
 	</dependencies>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${version.compiler.plugin}</version>
-					<configuration>
-						<source>${maven.compiler.source}</source>
-						<target>${maven.compiler.target}</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>${maven.surefire.plugin}</version>
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.maven.surefire</groupId>
-							<artifactId>surefire-junit47</artifactId>
-							<version>${maven.surefire.junit47}</version>
-						</dependency>
-					</dependencies>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>

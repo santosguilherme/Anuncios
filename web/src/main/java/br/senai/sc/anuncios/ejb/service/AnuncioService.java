@@ -31,16 +31,16 @@ public class AnuncioService {
 			return null;
 		}
 	}
-	
-	public List<Anuncio> listarAnuncioDoUsuario(final Long idUsario){
-		String strQuery = "SELECT a FROM Anuncio a WHERE a.usuario.indice = :ID ORDER BY a.indice DESC";
-        TypedQuery<Anuncio> query = entityManager.createQuery(strQuery, Anuncio.class);
-        query.setParameter("ID", idUsario);
 
-        return query.getResultList();
+	public List<Anuncio> listarAnunciosUsuario(final Long idUsario) {
+		String strQuery = "SELECT a FROM Anuncio a WHERE a.usuario.indice = :ID ORDER BY a.indice DESC";
+		TypedQuery<Anuncio> query = entityManager.createQuery(strQuery, Anuncio.class);
+		query.setParameter("ID", idUsario);
+
+		return query.getResultList();
 	}
-	
-	public List<Anuncio> listaTodosAnuncios(){
+
+	public List<Anuncio> listarTodosAnuncios() {
 		return entityManager.createQuery("from Anuncio", Anuncio.class).getResultList();
 	}
 }

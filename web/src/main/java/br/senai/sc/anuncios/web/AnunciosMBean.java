@@ -14,26 +14,23 @@ import br.senai.sc.anuncios.web.entidades.Anuncio;
 
 @ManagedBean
 @SessionScoped
-public class AnunciosMBean implements Serializable{
+public class AnunciosMBean implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@EJB
-	private AnuncioService anuncioService; 
+	private AnuncioService anuncioService;
 
 	private List<Anuncio> anuncios;
 
 	private Anuncio anuncio;
 
-	public String dateToString(Long millis){
-		if(millis == null){
-			return "";
-		}
-		return new SimpleDateFormat("dd/MM/yyy HH:mm").format(new Date(millis));
+	public String dateToString(Long millis) {
+		return millis == null ? "" : new SimpleDateFormat("dd/MM/yyy HH:mm").format(new Date(millis));
 	}
 
 	public List<Anuncio> getAnuncios() {
-		this.anuncios = this.anuncioService.listaTodosAnuncios();
+		this.anuncios = this.anuncioService.listarTodosAnuncios();
 		return this.anuncios;
 	}
 

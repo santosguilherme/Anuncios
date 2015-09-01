@@ -17,7 +17,7 @@ public class Anuncio implements Serializable {
 	private static final long serialVersionUID = -2695197813207977947L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Expose
 	private Long indice;
 

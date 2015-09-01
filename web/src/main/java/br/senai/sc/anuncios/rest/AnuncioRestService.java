@@ -54,7 +54,7 @@ public class AnuncioRestService extends AnuncioService {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response listAnunciosForUser() {
-		String jsonLista = new Gson().toJson(listarAnuncioDoUsuario(idUser));
+		String jsonLista = new Gson().toJson(listarAnunciosUsuario(idUser));
 		return Response.ok(jsonLista).build();
 	}
 }
